@@ -23,6 +23,7 @@ import Kessler4 from './assets/kessler-4.png';
 import Kessler5 from './assets/kessler-5.png'; 
 import Kessler6 from './assets/kessler-6.png'; 
 import KesslerStation from './assets/kesslerstation.png'; 
+import KesslerPoster from './assets/kessler-poster.png'; 
 
 import SGB from './assets/blackoutday2020.png'; 
 
@@ -35,8 +36,7 @@ class Portfolio extends Component {
     render() {
         return (
         <div>
-            {/* <div className="container playful-palette"> */}
-                <div className="container playful-palette">
+                <div className="project-container playful-palette">
                 <div className="row portfolio">
                     <p className="p playfulpalette">1 of 5<span><h3 className="h3 playful-palette">Adobe's Playful Palette</h3></span></p>
                 </div>
@@ -70,8 +70,7 @@ class Portfolio extends Component {
                 </div>
                 </div>
 
-                <div className="container stars">
-
+                <div className="project-container imagineering">
                 <div className="row portfolio">
                     <p className="p imagineering">2 of 5<span><h3 className="h3 imagineering">Disney Imagineering</h3></span></p>
                 </div>
@@ -80,9 +79,6 @@ class Portfolio extends Component {
                     <p className="tags">3d modeling</p>
                     <p className="tags">digital painting</p>
                 </div>
-                <div className="row">
-                    <img width="80%" src={KesslerStation} alt="Kessler"/>
-                </div><br></br><br></br>
 
                 <div className="row">
                     <div className="col-sm-7">
@@ -95,7 +91,7 @@ class Portfolio extends Component {
 
                             <div class="slides">
                                 <div id="slide-1">
-                                    <img className="portfolio-img" src={Kessler1} alt="Kessler"/>
+                                    <img className="portfolio-img" src={Kessler5} alt="Kessler"/>
                                 </div>
                                 <div id="slide-2">
                                     <img className="portfolio-img" src={Kessler2} alt="Kessler"/>
@@ -104,15 +100,17 @@ class Portfolio extends Component {
                                     <img className="portfolio-img" src={Kessler3} alt="Kessler"/>
                                 </div>
                                 <div id="slide-4">
-                                    <img className="portfolio-img" src={Kessler4} alt="Kessler"/>
+                                    <img className="portfolio-img" src={Kessler6} alt="Kessler"/>
                                 </div>
                                 <div id="slide-5">
-                                    <img className="portfolio-img" src={Kessler5} alt="Kessler"/>
+                                    <img width="50%" src={KesslerPoster} alt="Kessler"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-sm-5">
+                        <br></br>
+                        <img width="80%" src={KesslerStation} alt="Kessler"/>
                         <br></br><br></br>
                         <p className="p imagineering">Chosen as one of six teams from over 250 nationally for the 2019 Imaginations
                         Design Competition, my team conceptualized
@@ -123,15 +121,11 @@ class Portfolio extends Component {
                         here</a></span> and <span><a href="https://disneyimaginations.com/2018-imaginations-finalists/" target="_blank">
                         here</a></span>. <br></br><br></br>
                         Tools Used: Maya, KeyShot, Photoshop, Illustrator</p>
-                        <div className="icons portfolio">
-                            <a href="https://www.youtube.com/watch?v=Zh1XR9ykuUw&t=1s" target="_blank"><img className="icon" src={Youtube} alt="Youtube"/></a>
-                            <a href="https://github.com/jesspeng/playful-palette" target="_blank"><img className="icon" src={Github} alt="Github"/></a>
-                        </div>
                     </div>
                 </div>
                 </div>
 
-                <div className="container nyt">
+                <div className="project-container nyt">
                 <div className="row portfolio">
                     <p className="p nyt">3 of 5<span><h3 className="h3 nyt">The New York Times</h3></span></p>
                 </div>
@@ -177,7 +171,7 @@ class Portfolio extends Component {
                 </div>
                 </div>
 
-                <div className="container molex">
+                <div className="project-container molex">
                 <div className="row portfolio">
                     <p className="p molex">4 of 5<span><h3 className="h3 molex">molex</h3></span></p>
                 </div>

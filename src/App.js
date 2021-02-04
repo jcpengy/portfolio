@@ -9,8 +9,11 @@ import { Navigation, Route, Screen, Link, glide, unfold } from "react-tiger-tran
 import Home from './Home'; 
 import Portfolio from './Portfolio'; 
 import About from './About'; 
+import Title from './Title'; 
 
 import Back from './assets/previous.svg'; 
+import LinkedIn from './assets/icons/svg/052-linkedin.svg';
+import Github from './assets/icons/svg/032-github.svg';
 
 // inject glide styles
 glide({
@@ -27,6 +30,7 @@ const screenStyle = {
   flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "center",
+  // overflow: "visible"
 };
 
 // you will need to set the height of  <Navigation /> wrapper,
@@ -45,12 +49,18 @@ export default () => (
           }}
         >
           <Home></Home>
+          <Title></Title>
             <div className="container buttons">
                 <div className="center">
                     <Link to="/portfolio" transition='glide-right'><button className="home-btn portfolio">Portfolio</button></Link>
                     <Link to="/about" transition='glide-left'><button className="home-btn about">About</button></Link>
                 </div>
             </div>
+            <div className="nav">
+              <Link to="https://www.linkedin.com/in/jess-peng/"><img className="nav-btn" src={LinkedIn}/></Link>
+              <Link to="https://github.com/jcpengy"><img className="nav-btn" src={Github}/></Link>
+            </div>
+
         </Screen>
       </Route>
       <Route
@@ -59,14 +69,17 @@ export default () => (
         screen // shorthand to wrap children with screen
         screenProps={{
           style: {
-            // backgroundColor: "#607d88",
+            // backgroundColor: "radial-gradient(circle, rgba(255,46,255,0.5) 0%, rgba(66,227,255,0.5) 100%)",
             ...screenStyle
           }
         }}
       >
         <Portfolio></Portfolio>
         <div className="nav">
-          <Link to="/" transition='glide-left'><img className="back-btn portfolio" src={Back}/></Link>
+          <Link to="https://www.linkedin.com/in/jess-peng/"><img className="nav-btn" src={LinkedIn}/></Link>
+          <Link to="https://github.com/jcpengy"><img className="nav-btn" src={Github}/></Link>
+
+          <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back}/></Link>
         </div>
       </Route>
     
@@ -76,16 +89,18 @@ export default () => (
         screen // shorthand to wrap children with screen
         screenProps={{
           style: {
-            backgroundColor: "#AD70B3",
+            backgroundColor: "white",
             ...screenStyle
           }
         }}
       >
         
         <About></About>
-        <Link to="/" transition='glide-right'>
-        Back
-        </Link> 
+        <div className="nav">
+          <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back}/></Link>
+          <Link to="https://www.linkedin.com/in/jess-peng/"><img className="nav-btn" src={LinkedIn}/></Link>
+          <Link to="https://github.com/jcpengy"><img className="nav-btn" src={Github}/></Link>
+        </div>
         
       </Route>
     </Navigation>

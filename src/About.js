@@ -17,7 +17,7 @@ class About extends Component {
                             <img src={headshot} alt="Headshot" width="450px"/>
                         </div>
                         <div className="col">
-                            <p className="p about"><span>Hi, I'm Jess!</span>I am currently a Tech Consultant based in NYC who works on the Campaign team at Adobe. I majored in Digital Media Design and 
+                            <h3>Hi! I'm Jess.</h3><p className="p about">I am currently a Tech Consultant based in NYC who works on the Campaign team at Adobe. I majored in Digital Media Design and 
                             minored in Fine Arts at the University of Pennsylvania, where I graduated from the 
                             School of Engineering in May 2019.<br></br><br></br>
                             In my free time, I love cartooning, making art, watching stand up, playing with my two cats, and running. </p>

@@ -92,7 +92,7 @@ class Home extends Component {
     
     return (
       <div>     
-        <Title></Title>
+        {/* <Title></Title> */}
         {/* <div className="config">
           <div className='control-wrap'>
             <p>Speed: {speed}</p>
@@ -113,6 +113,18 @@ class Home extends Component {
                 step="0.1"
                 value={accelMod}
                 onChange={this.handleAccelChange.bind(this)} />
+          </div>
+        </div> */}
+{/* 
+        <div className="post">
+          <div className="pole">
+
+          </div>
+          <div className="portfolio-sign">
+
+          </div>
+          <div className="about-sign">
+
           </div>
         </div> */}
 
@@ -155,8 +167,6 @@ class Home extends Component {
           </div>
           <div className="shadow"></div>
         </div>
-
-      
         
         <div className="instructions">
           <p>move your mouse.</p>
