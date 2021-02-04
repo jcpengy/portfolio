@@ -57,8 +57,8 @@ export default () => (
                 </div>
             </div>
             <div className="nav">
-              <Link to="https://www.linkedin.com/in/jess-peng/"><img className="nav-btn" src={LinkedIn}/></Link>
-              <Link to="https://github.com/jcpengy"><img className="nav-btn" src={Github}/></Link>
+              <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
+              <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
             </div>
 
         </Screen>
@@ -76,9 +76,8 @@ export default () => (
       >
         <Portfolio></Portfolio>
         <div className="nav">
-          <Link to="https://www.linkedin.com/in/jess-peng/"><img className="nav-btn" src={LinkedIn}/></Link>
-          <Link to="https://github.com/jcpengy"><img className="nav-btn" src={Github}/></Link>
-
+          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
+          <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
           <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back}/></Link>
         </div>
       </Route>
@@ -96,10 +95,10 @@ export default () => (
       >
         
         <About></About>
-        <div className="nav">
+        <div className="nav about">
           <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back}/></Link>
-          <Link to="https://www.linkedin.com/in/jess-peng/"><img className="nav-btn" src={LinkedIn}/></Link>
-          <Link to="https://github.com/jcpengy"><img className="nav-btn" src={Github}/></Link>
+          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
+          <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
         </div>
         
       </Route>

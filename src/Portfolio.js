@@ -36,7 +36,7 @@ class Portfolio extends Component {
     render() {
         return (
         <div>
-                <div className="project-container playful-palette">
+                <div className="content-container playful-palette">
                 <div className="row portfolio">
                     <p className="p playfulpalette">1 of 5<span><h3 className="h3 playful-palette">Adobe's Playful Palette</h3></span></p>
                 </div>
@@ -70,7 +70,7 @@ class Portfolio extends Component {
                 </div>
                 </div>
 
-                <div className="project-container imagineering">
+                <div className="content-container imagineering">
                 <div className="row portfolio">
                     <p className="p imagineering">2 of 5<span><h3 className="h3 imagineering">Disney Imagineering</h3></span></p>
                 </div>
@@ -125,7 +125,7 @@ class Portfolio extends Component {
                 </div>
                 </div>
 
-                <div className="project-container nyt">
+                <div className="content-container nyt">
                 <div className="row portfolio">
                     <p className="p nyt">3 of 5<span><h3 className="h3 nyt">The New York Times</h3></span></p>
                 </div>
@@ -171,7 +171,7 @@ class Portfolio extends Component {
                 </div>
                 </div>
 
-                <div className="project-container molex">
+                <div className="content-container molex">
                 <div className="row portfolio">
                     <p className="p molex">4 of 5<span><h3 className="h3 molex">molex</h3></span></p>
                 </div>
