@@ -13,7 +13,9 @@ import Title from './Title';
 
 import Back from './assets/previous.svg'; 
 import LinkedIn from './assets/icons/svg/052-linkedin.svg';
+import Instagram from './assets/icons/svg/044-instagram.svg';
 import Github from './assets/icons/svg/032-github.svg';
+import Behance from './assets/icons/svg/007-behance.svg'; 
 
 // inject glide styles
 glide({
@@ -49,18 +51,21 @@ export default () => (
           }}
         >
           <Home></Home>
-          <Title></Title>
-            <div className="container buttons">
-                <div className="center">
-                    <Link to="/portfolio" transition='glide-right'><button className="home-btn portfolio">Portfolio</button></Link>
-                    <Link to="/about" transition='glide-left'><button className="home-btn about">About</button></Link>
-                </div>
+          <div className="container home">
+            <div className="row">
+              <Title></Title>
             </div>
-            <div className="nav">
-              <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
-              <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
+            <div className="row">
+              <Link to="/portfolio" transition='glide-right'><button className="home-btn portfolio">Portfolio</button></Link>
+              <Link to="/about" transition='glide-left'><button className="home-btn about">About</button></Link>
             </div>
-
+          </div>
+          <div className="nav home">
+            <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
+            <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
+            <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
+            <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
+          </div>
         </Screen>
       </Route>
       <Route
@@ -75,8 +80,10 @@ export default () => (
         }}
       >
         <Portfolio></Portfolio>
-        <div className="nav">
+        <div className="nav portfolio">
+          <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
           <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
+          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
           <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
           <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back}/></Link>
         </div>
@@ -97,7 +104,9 @@ export default () => (
         <About></About>
         <div className="nav about">
           <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back}/></Link>
+          <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
           <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
+          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
           <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
         </div>
         

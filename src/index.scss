@@ -6,6 +6,15 @@
   font-family: adobeRegular;
   src: url(./assets/Adobe-Clean/AdobeClean-Light.otf);
 }
+@font-face {
+  font-family: graphikBlack;
+  src: url(./assets/Graphik/GraphikBlack.otf); 
+}
+@font-face {
+  font-family: graphikLight;
+  src: url(./assets/Graphik/GraphikLight.otf); 
+}
+
 
 @import url("https://use.typekit.net/rbk4msf.css");
 
@@ -13,7 +22,7 @@
 *,*:before,*:after { box-sizing: border-box; }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: graphikLight;
   font-weight: 100;
   color: white;
 }
@@ -278,14 +287,15 @@ $shadow:#3A271C;
 // title 
 
 h1 {
+  font-family: graphikBlack;
   display: block; 
   text-align: center;
   
 &.home {
-  font-weight: 600;
-  line-height: 90%; 
+  // font-weight: 600;
+  line-height: 85%; 
   color: white;
-  font-size: 10em;
+  font-size: 12em;
   margin-top: -20vw; 
 }
 &.header {
@@ -295,6 +305,9 @@ h1 {
   font-size: 8em;
   text-align: left; 
   // margin: -vh 0 0 0; 
+}
+&.thingsilike {
+  color: white; 
 }
 }
 
@@ -340,36 +353,18 @@ h1 span span {
 
 // home buttons
 
-.container {
-&.buttons {
-  height: 150px; 
-  position: absolute; 
-  // border: 3px solid green; 
-}
-}
-
-.center {
-  margin: 0; 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  -ms-transform: translate(-50%, -50%); 
-  transform: translate(-50%, -50%); 
-}
-
 .home-btn {
   opacity: 0; 
   position: relative; 
-  display: inline-block; 
   width: 220px;
   height: 60px; 
-  border: 0.1em solid white; 
   margin: 0em 0.3em 0.3em 0.3em;
+  border: 1px solid white; 
   border-radius: 0.5em; 
   box-sizing: border-box; 
   text-decoration: none; 
-  background-color: rgba(0,0,0,0); 
-  color: white; 
+  background-color: white; 
+  color: #e5a5eb; 
   text-align: center; 
   animation: move-buttons 1s forwards; 
 
@@ -388,19 +383,26 @@ h1 span span {
 }
 
 @media screen and (max-width: 800px) {
+    .content-container {
+      &.about {
+        padding-top: 80px; 
+      }
+    }
     .home-btn {
-      display: block; 
-      margin: 0.3em auto; 
+      width: 180px; 
+    }
+    .container {
+      &.home {
+        margin-top: -20vh; 
+      }
     }
     .h1 {
       &.home {
-        margin-top: -100vh; 
-        font-size: 8em; 
+        font-size: 9em; 
       }
       &.header {
         margin-top: 0; 
         font-size: 5em; 
-
       }
     }
     .h3 {
@@ -524,7 +526,7 @@ h4 {
   padding: 5% 10% 5% 10%; 
 
   &.playful-palette {
-    background: radial-gradient(circle, rgba(255,46,255,0.5) 0%, rgba(66,227,255,0.8) 100%);
+    background: radial-gradient(circle, rgba(255,46,255,0.6) 0%, rgba(66,227,255,1) 100%);
   }
   &.imagineering {
     display:block;
@@ -540,10 +542,15 @@ h4 {
   &.molex {
     background-color: #da4e4e; 
   }
-  &.pengandink {
+  &.hobbies {
     background-color: #e5a5eb;
   }
+  &.footer {
+    color: #e5a5eb; 
+    text-align: center;
+  }
 }
+
 
 
 // star background
@@ -638,8 +645,14 @@ h4 {
   animation: move-nav 1s ease-out; 
   &.about {
     justify-content: flex-start;
+    left: 5vh; 
   }
-
+  &.home {
+    right: 5vh; 
+  }
+  &.portfolio {
+    right: 5vh; 
+  }
 }
 
 @keyframes move-nav {
@@ -655,11 +668,10 @@ h4 {
 }
 
 .nav-btn {
-  width: 80px; 
-  height: 80px; 
-  padding: 20px; 
-  filter: invert(92%) sepia(51%) saturate(5489%) hue-rotate(220deg) brightness(96%) contrast(91%);
-
+  width: 30px; 
+  height: 30px; 
+  margin: 5vh 1vh 0 1vh; 
+  filter: invert(55%) sepia(47%) saturate(7368%) hue-rotate(257deg) brightness(98%) contrast(98%);  
   &.back-portfolio {
     transform: rotate(-180deg);
   }

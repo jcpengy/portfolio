@@ -6,13 +6,14 @@ import pengandink3 from './assets/pengandink-selfie2.png';
 import runningshoes from './assets/runningshoes.png'; 
 import cats from './assets/cats.png'; 
 import comedy from './assets/comedy.png';
+import heart from './assets/heart-icon.png';
 
 
 class About extends Component {
     render() {
         return(
             <div>
-            <div className="content-container">
+            <div className="content-container about">
                 <h1 className="h1 header">about me</h1>
                     <div className="row">
                         {/* <div className="col">
@@ -26,8 +27,8 @@ class About extends Component {
                         </div>
                     </div>
             </div>
-            <div className="content-container pengandink">
-                <h1>Things I Like</h1>
+            <div className="content-container hobbies">
+                <h1 className="h1 thingsilike">Things I Like</h1>
                     <div className="row">
                         
                         <div className="col-sm-3">
@@ -43,6 +44,10 @@ class About extends Component {
                             <img className="portfolio-img" src={runningshoes} alt="Running"/>
                         </div>
                     </div>      
+            </div>
+            <div className="content-container footer">
+                Any questions? Feel free to email me at jesspeng@adobe.com.<br></br><br></br>
+                Made with <span><img width="20px" src={heart} alt="Heart"/></span> by Jess Peng
             </div>
             </div>
         )                    
