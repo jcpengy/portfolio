@@ -14,6 +14,14 @@
   font-family: graphikLight;
   src: url(./assets/Graphik/GraphikLight.otf); 
 }
+@font-face {
+  font-family: gorditaMedium;
+  src: url(./assets/GorditaMedium.otf); 
+}
+@font-face {
+  font-family: gorditaRegular;
+  src: url(./assets/GorditaRegular.otf); 
+}
 
 
 @import url("https://use.typekit.net/rbk4msf.css");
@@ -22,7 +30,7 @@
 *,*:before,*:after { box-sizing: border-box; }
 
 p {
-  font-family: graphikLight;
+  font-family: gorditaRegular;
   font-weight: 100;
   color: white;
 }
@@ -367,6 +375,7 @@ h1 span span {
   color: #e5a5eb; 
   text-align: center; 
   animation: move-buttons 1s forwards; 
+  font-family: gorditaRegular; 
 
 &.portfolio {
   animation-delay: .3s; 
@@ -546,6 +555,7 @@ h4 {
     background-color: #e5a5eb;
   }
   &.footer {
+    font-family: gorditaRegular; 
     color: #e5a5eb; 
     text-align: center;
   }
@@ -643,6 +653,7 @@ h4 {
   position: fixed; 
   justify-content: flex-end; 
   animation: move-nav 1s ease-out; 
+  font-family: gorditaRegular; 
   &.about {
     justify-content: flex-start;
     left: 5vh; 
@@ -671,6 +682,7 @@ h4 {
   width: 30px; 
   height: 30px; 
   margin: 5vh 1vh 0 1vh; 
+  font-family: gorditaRegular; 
   filter: invert(55%) sepia(47%) saturate(7368%) hue-rotate(257deg) brightness(98%) contrast(98%);  
   &.back-portfolio {
     transform: rotate(-180deg);
