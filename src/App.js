@@ -64,7 +64,7 @@ export default () => (
             <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
             <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
             <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
-            <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
+            {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
           </div>
         </Screen>
       </Route>
@@ -84,7 +84,7 @@ export default () => (
           <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
           <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
           <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
-          <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
+          {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
           <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back}/></Link>
         </div>
       </Route>
@@ -104,10 +104,10 @@ export default () => (
         <About></About>
         <div className="nav about">
           <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back}/></Link>
-          <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
-          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
-          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
-          <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a>
+          <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn about" src={Behance}/></a>
+          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn about" src={LinkedIn}/></a>
+          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn about" src={Instagram}/></a>
+          {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
         </div>
         
       </Route>

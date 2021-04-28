@@ -552,7 +552,7 @@ h4 {
     background-color: #da4e4e; 
   }
   &.hobbies {
-    background-color: #e5a5eb;
+    background-color: #e4e4e4;
   }
   &.footer {
     font-family: gorditaRegular; 
@@ -560,7 +560,6 @@ h4 {
     text-align: center;
   }
 }
-
 
 
 // star background
@@ -686,6 +685,12 @@ h4 {
   filter: invert(55%) sepia(47%) saturate(7368%) hue-rotate(257deg) brightness(98%) contrast(98%);  
   &.back-portfolio {
     transform: rotate(-180deg);
+  }
+  &.about {
+    filter: invert(67%) sepia(91%) saturate(244%) hue-rotate(251deg) brightness(100%) contrast(85%);
+  }
+  &.back-about {
+    filter: invert(67%) sepia(91%) saturate(244%) hue-rotate(251deg) brightness(100%) contrast(85%);
   }
 }
 
