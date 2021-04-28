@@ -23,7 +23,7 @@ class About extends Component {
                             <h4>Hi! I'm Jess.</h4><p className="p about">I am currently a Tech Consultant on Adobe Campaign. 
                             I majored in <span><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Digital Media Design</a></span> and minored 
                             in Fine Arts at the University of Pennsylvania, where I graduated from the School of Engineering in May 2019.<br></br><br></br>
-                            In my free time, I like graphic designing, watching stand-up/reality tv, and running. <br><br></br></br>
+                            In my free time, I like graphic designing, cartooning on @peng.and.ink, watching stand-up/reality tv, and running. <br><br></br></br>
                             If you want to collaborate or have any questions, feel free to email me at pengjess2@gmail.com.
                             </p>
 
