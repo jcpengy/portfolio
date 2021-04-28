@@ -20,7 +20,7 @@ class About extends Component {
                             <img src={headshot} alt="Headshot" width="450px"/>
                         </div>  */}
                         <div className="col">
-                            <h4>Hi! I'm Jess.</h4><p className="p about">I am currently a Tech Consultant working on the Campaign team at Adobe. 
+                            <h4>Hi! I'm Jess.</h4><p className="p about">I am currently a Tech Consultant on Adobe Campaign. 
                             I majored in <span><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Digital Media Design</a></span> and minored 
                             in Fine Arts at the University of Pennsylvania, where I graduated from the School of Engineering in May 2019.</p>
 
@@ -46,7 +46,7 @@ class About extends Component {
                     </div>      
             </div>
             <div className="content-container footer">
-                Any questions? Feel free to email me at jesspeng@adobe.com.<br></br><br></br>
+                Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
                 Made with <span><img width="20px" src={heart} alt="Heart"/></span> by Jess Peng
             </div>
             </div>

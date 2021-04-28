@@ -45,7 +45,7 @@ class Portfolio extends Component {
         <div>
                 <div className="content-container playful-palette">
                 <div className="row portfolio">
-                    <p className="p playfulpalette">1 of 5<span><h3 className="h3 playful-palette">Adobe's Playful Palette</h3></span></p>
+                    <p className="p playfulpalette">1 of 4<span><h3 className="h3 playful-palette">Adobe's Playful Palette</h3></span></p>
                 </div>
                 <div>
                     <p className="tags">coding</p>
@@ -62,7 +62,7 @@ class Portfolio extends Component {
 
                         <p className="p playfulpalette">For my senior design project, I recreated 
                         <span><a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
-                        Adobe's Playful Palette</a></span>, an interactive parametric color mixer for artists that mimics and enhances the traditional
+                         Adobe's Playful Palette</a></span>, an interactive parametric color mixer for artists that mimics and enhances the traditional
                         painting process. The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history. <br></br><br></br>
                         Tools Used: WebGL, JavaScript, HTML/CSS</p>
                         <div className="icons portfolio">
@@ -82,7 +82,7 @@ class Portfolio extends Component {
 
                 <div className="content-container imagineering">
                 <div className="row portfolio">
-                    <p className="p imagineering">2 of 5<span><h3 className="h3 imagineering">Kessler Project</h3></span></p>
+                    <p className="p imagineering">2 of 4<span><h3 className="h3 imagineering">Kessler Project</h3></span></p>
                 </div>
                 <div>
                     <p className="tags">experience design</p>
@@ -143,7 +143,7 @@ class Portfolio extends Component {
 
                 <div className="content-container nyt">
                 <div className="row portfolio">
-                    <p className="p nyt">3 of 5<span><h3 className="h3 nyt">The New York Times</h3></span></p>
+                    <p className="p nyt">3 of 4<span><h3 className="h3 nyt">The New York Times</h3></span></p>
                 </div>
                 <div>
                     <p className="tags">prototyping</p>
@@ -189,7 +189,7 @@ class Portfolio extends Component {
 
                 <div className="content-container molex">
                 <div className="row portfolio">
-                    <p className="p molex">4 of 5<span><h3 className="h3 molex">molex</h3></span></p>
+                    <p className="p molex">4 of 4<span><h3 className="h3 molex">molex</h3></span></p>
                 </div>
                 <div>
                     <p className="tags">visual design</p>
@@ -242,7 +242,7 @@ class Portfolio extends Component {
                 </div>
                 </div> */}
                  <div className="content-container footer">
-                Any questions? Feel free to email me at jesspeng@adobe.com.<br></br><br></br>
+                Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
                 Made with <span><img width="20px" src={heart} alt="Heart"/></span> by Jess Peng
             </div>
             </div>
