@@ -54,15 +54,15 @@ class Portfolio extends Component {
                 <div className="row">
                     <div className="col-sm-6">
                         <img className="portfolio-img" src={Palette2} alt="Playful Palette"/><br></br><br></br>
-                        <img className="portfolio-img" src={PaletteResults2} alt="Playful Palette Results"/>
+                        <img className="portfolio-img" src={PaletteResults2} alt="Playful Palette Results"/><br></br><br></br>
 
                     </div>
                     <div className="col-sm-6">
                         <img className="portfolio-img" src={Palette} alt="Playful Palette"/><br></br><br></br>
 
-                        <p className="p playfulpalette">For my senior design project, I recreated 
-                        <span><a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
-                         Adobe's Playful Palette</a></span>, an interactive parametric color mixer for artists that mimics and enhances the traditional
+                        <p className="p playfulpalette">For my senior design project, I recreated  
+                          <span><a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
+                          Adobe's Playful Palette</a></span>, an interactive parametric color mixer for artists that mimics and enhances the traditional
                         painting process. The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history. <br></br><br></br>
                         Tools Used: WebGL, JavaScript, HTML/CSS</p>
                         <div className="icons portfolio">
@@ -162,7 +162,7 @@ class Portfolio extends Component {
                     </div>
                     <div className="col-sm-7">
                         <img className="portfolio-img" src={Syria} alt="The New York Times"/><br></br><br></br>
-                        <img className="portfolio-img" src={Thai2} alt="The New York Times"/>
+                        <img className="portfolio-img" src={Thai2} alt="The New York Times"/><br></br><br></br>
                            
                         {/* <Slide className="slide" easing="ease">
                             <div className="each-slide">
@@ -203,17 +203,16 @@ class Portfolio extends Component {
                         Your browser does not support HTML5 video.
                     </video> */}
 
-                        <img src={Molex1} alt="Molex" width="100%"/>
+                        <img src={Molex1} alt="Molex" width="100%"/><br></br><br></br>
 
                     </div>
                     <div className="col-sm-4">
                     <img src={Molex3} alt="Molex" width="100%"/>
-
+                        <br></br><br></br>
                         <p className="p molex">As a Product Management Intern under the Power Signal Business Unit, I designed 3-D
                         visuals and animations to market the company's new line 
-                        of power connectors. I also developed VR mockups and introduced applications
-                        like KeyShot to the Digital Marketing Team for adding dynamic content to their web
-                        and mobile platforms.<br></br><br></br>
+                        of power connectors. I also developed VR mockups and introduced KeyShot to the Digital Marketing Team to add
+                        dynamic content to their web and mobile platforms.<br></br><br></br>
                         Tools Used: Maya, KeyShot, Illustrator, After Effects</p>
                     </div>
                 </div>
