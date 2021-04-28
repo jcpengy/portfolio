@@ -31,8 +31,8 @@ class About extends Component {
                         </div>
                     </div>
             </div>
-            <div className="content-container hobbies">
-                {/* <h1 className="h1 thingsilike">Things I Like</h1>
+            {/* <div className="content-container hobbies">
+                <h1 className="h1 thingsilike">Things I Like</h1>
                     <div className="row">
                         
                         <div className="col-sm-3">
@@ -47,8 +47,8 @@ class About extends Component {
                         <div className="col-sm-3">
                             <img className="portfolio-img" src={runningshoes} alt="Running"/>
                         </div>
-                    </div>       */}
-            </div>
+                    </div>      
+            </div> */}
             <div className="content-container footer">
                 Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
                 Made with <span><img width="20px" src={heart} alt="Heart"/></span> by Jess Peng
