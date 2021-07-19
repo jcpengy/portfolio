@@ -29,7 +29,7 @@ class About extends Component {
 
             <div className="content-container footer">
                 Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
-                Made with <span><img width="20px" src={heart} alt="Heart"/></span> by Jess Peng
+                Made with <span><img id="heart" src={heart} alt="Heart"/></span> by Jess Peng
             </div>
             </div>
         )                    
