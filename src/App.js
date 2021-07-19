@@ -61,7 +61,7 @@ export default () => (
             </div>
           </div>
           <div className="nav home">
-            <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
+            <a href="https://www.behance.net/jesspdesign" target="_blank"><img className="nav-btn" src={Behance}/></a>
             <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
             <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
             {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
@@ -81,7 +81,7 @@ export default () => (
       >
         <Portfolio></Portfolio>
         <div className="nav portfolio">
-          <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn" src={Behance}/></a>
+          <a href="https://www.behance.net/jesspdesign" target="_blank"><img className="nav-btn" src={Behance}/></a>
           <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
           <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
           {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
@@ -104,7 +104,7 @@ export default () => (
         <About></About>
         <div className="nav about">
           <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back}/></Link>
-          <a href="https://www.behance.net/jpeng" target="_blank"><img className="nav-btn about" src={Behance}/></a>
+          <a href="https://www.behance.net/jesspdesign" target="_blank"><img className="nav-btn about" src={Behance}/></a>
           <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn about" src={LinkedIn}/></a>
           <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn about" src={Instagram}/></a>
           {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
