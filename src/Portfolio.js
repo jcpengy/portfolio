@@ -30,7 +30,27 @@ import KesslerStation from './assets/kesslerstation.png';
 import KesslerPoster from './assets/kessler-poster.png'; 
 import KesslerCover from './assets/kessler-cover.png'; 
 
+
+// design
+import Eid from './assets/eidmubarak.png'; 
+import Rivers from './assets/rivers.png'; 
+import Daisy from './assets/daisy.png'; 
+import Rainbow from './assets/Rainbow.png'; 
+import House from './assets/house.png'
+import Wood from './assets/woodshop.png'; 
+import Knox from './assets/knoxglow.png'; 
+
+// art
+import Rodin from './assets/rodinkitchen.png'; 
 import SGB from './assets/blackoutday2020.png'; 
+import Nainai from './assets/nainai.jpg'; 
+import Yeye from './assets/yeye.jpg'; 
+import Friends from './assets/friends.jpg'; 
+
+import Sketches from './assets/100sketch.png'; 
+
+
+
 
 //icons
 import Github from './assets/icons/svg/032-github.svg'; 
@@ -200,6 +220,54 @@ class Portfolio extends Component {
                         Tools Used: Maya, KeyShot, Illustrator, After Effects</p>
                    
                 </div>
+                </div>
+
+                <div className="content-container">
+                <div className="row portfolio">
+                    <h3 className="h3 design">More of my visual work...</h3>
+                </div><br></br>
+                <div className="row">
+                        <p className="p design">In my free time, I run an <a href='https://www.etsy.com/shop/JessPDesign'>Etsy shop</a> on the side for graphic design. </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><img class='cropped' src={Eid} width='100%'/></div>
+                        <div class="col"><img class='cropped' src={Rivers} width='100%'/></div>
+                        <div class="col"><img class='cropped' src={Daisy} width='100%'/></div>
+                        
+                    <div class="w-100"></div><br></br>
+                    <div class="col"><img class='cropped' src={Rainbow} width='100%'/></div>
+                    <div class="col"><img class='cropped' src={House} width='100%'/></div>
+
+                    <div class="w-100"></div><br></br>
+                    <div class="col"><img class='cropped' src={Wood} width='100%'/></div>
+                    <div class="col"><img class='cropped' src={Knox} width='100%'/></div>
+                    </div>
+                </div><br></br><br></br>
+                <div className="row">
+                        <p className="p design">Personal Art Collection</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><img src={Nainai} width='100%'/></div>
+                        <div class="col"><img src={Yeye} width='100%'/></div>
+                        <div class="col"><img src={Friends} width='100%'/></div>
+                    <div class="w-100"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <br></br><br></br>
+                <div className="row">
+                        <p className="p design">100 Mini Portraits</p><br></br>
+                        <p className="p design">Currently working on a personal project to do 100 illustrations of what I see in the news and pop culture. All drawings are done on my iPhone using Adobe Fresco.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><img src={Sketches} width='100%'/></div>
+                    </div>
+                </div>
+                    
                 </div>
 
                 {/* <div className="container">
