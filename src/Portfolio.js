@@ -39,6 +39,13 @@ import Rainbow from './assets/Rainbow.png';
 import House from './assets/house.png'
 import Wood from './assets/woodshop.png'; 
 import Knox from './assets/knoxglow.png'; 
+import Rise from './assets/riseup.png';
+import Tappers from './assets/tappers.png'; 
+import Jackie from './assets/jackie.png'; 
+import Running from './assets/running.png'; 
+import Law from './assets/law.png'; 
+import Record from './assets/allison.png'; 
+import JessPDesign from './assets/jesspdesign.png';
 
 // art
 import Rodin from './assets/rodinkitchen.png'; 
@@ -63,16 +70,69 @@ class Portfolio extends Component {
     render() {
         return (
         <div>
-                <div className="content-container playful-palette">
+             <div className="content-container">
                 <div className="row portfolio">
-                    <p className="p playfulpalette">1 of 4<span><h3 className="h3 playful-palette">Adobe's Playful Palette</h3></span></p>
+                    <h3 className="h3 design">JessPDesign</h3>
+                </div><br></br>
+                <div className="row">
+                        <p className="p design">Check out my shop <a href='https://www.etsy.com/shop/JessPDesign'>here</a> or view my full portfolio on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
                 </div>
-                <div>
+                
+                <img class='cropped' src={JessPDesign} width='100%'/>
+                    {/* <div class="row">
+                        <div class="col"><img class='cropped' src={Rise} width='100%'/></div>
+                        <div class="col"><img class='cropped' src={Tappers} width='100%'/></div>
+                        <div class="col"><img class='cropped' src={Jackie} width='100%'/></div>
+                        
+                    <div class="w-100"></div><br></br>
+                    <div class="col"><img class='cropped' src={Running} width='100%'/></div>
+                    <div class="col"><img class='cropped' src={Law} width='100%'/></div>
+                    <div class="col"><img class='cropped' src={Record} width='100%'/></div>
+                    </div> */}
+                
+                <br></br><br></br><br></br><br></br><br></br>
+                {/* <div className="row">
+                        <p className="p design">Personal Art Collection</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><img src={Nainai} width='100%'/></div>
+                        <div class="col"><img src={Yeye} width='100%'/></div>
+                        <div class="col"><img src={Friends} width='100%'/></div>
+                    <div class="w-100"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div> */}
+
+                {/* <div className="row">
+                        <p className="p design">100 Mini Portraits</p><br></br>
+                        <p className="p design">Currently working on a personal project to do 100 illustrations of what I see in the news and pop culture. All drawings are done on my iPhone using Adobe Fresco.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><img src={Sketches} width='100%'/></div>
+                    </div>
+                </div> */}
+                    
+                {/* </div> */}
+                {/* <div className="content-container"> */}
+                <div className="row portfolio">
+                    <h3 className="h3 design">Adobe's Playful Palette</h3>
+                </div><br></br>
+                {/* <div className="tagsdiv">
                     <p className="tags">coding</p>
                     <p className="tags">ux design</p>
-                </div>
+                </div> */}
                 <div className="row">
-                    <div className="col">
+                <p className="p design">For my senior design project, I recreated <a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
+                          Adobe's Playful Palette</a>, an interactive parametric color mixer for artists that mimics and enhances the traditional
+                        painting process. The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history.</p>
+                        
+                   
+                </div>
+                <div className="row"> 
+                <div className="col">
                         <img className="portfolio-img" src={Palette2} alt="Playful Palette"/><br></br><br></br>
                         <img className="portfolio-img" src={PaletteResults2} alt="Playful Palette Results"/><br></br><br></br>
                     </div>
@@ -80,33 +140,49 @@ class Portfolio extends Component {
                     <div className="col">
                         <img className="portfolio-img" src={Palette} alt="Playful Palette"/><br></br><br></br>
                     </div> 
+            
+                </div>      
+                <div className="row"> 
+                <p className="p design">Tools Used: WebGL, JavaScript, HTML/CSS</p>
                 </div>
                 <div className="row"> 
-                    <p className="p playfulpalette">For my senior design project, I recreated  
-                          <span><a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
-                          Adobe's Playful Palette</a></span>, an interactive parametric color mixer for artists that mimics and enhances the traditional
-                        painting process. The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history. <br></br><br></br>
-                        Tools Used: WebGL, JavaScript, HTML/CSS</p>
-                        <div className="icons portfolio">
+                <div className="icons portfolio">
                             <a href="https://docs.google.com/document/d/1AE245QrD4Qwe_OkZKNu6Izy1jiXGPli55S3L2oGW-_8/edit?usp=sharing" target="_blank"><img className="icon" src={GoogleDrive} alt="Google Drive"/></a>
                             <a href="https://www.youtube.com/watch?v=Zh1XR9ykuUw&t=1s" target="_blank"><img className="icon" src={Youtube} alt="Youtube"/></a>
                             <a href="https://github.com/jesspeng/playful-palette" target="_blank"><img className="icon" src={Github} alt="Github"/></a>
                         </div>
-                </div>      
                 </div>
 
-                <div className="content-container imagineering">
+                   
+           
+                <br></br><br></br><br></br><br></br><br></br>
+                {/* </div> */}
+
+                {/* <div className="content-container"> */}
                 <div className="row portfolio">
-                    <p className="p imagineering">2 of 4<span><h3 className="h3 imagineering">Kessler Project</h3></span></p>
+                    <h3 className="h3 design">Kessler Project</h3>
                 </div>
-                <div>
+                {/* <div>
                     <p className="tags">experience design</p>
                     <p className="tags">3d modeling</p>
                     <p className="tags">infographics</p>
                     <p className="tags">digital painting</p>
-                </div>
+                </div> */}
+                  <div className="row">
+                        <br></br>
+                        {/* <img id="kessler-slides" src={KesslerStation} alt="Kessler"/> */}
+                        <p className="p design">Chosen as one of 6 teams from over 250 nationally for the 2019 Walt Disney Imaginations
+                        Design Competition, my team conceptualized and created Kessler Project, an all-day space adventure that allows guests to experience the excitement
+                        of space travel. I led design and development of all visual art, both 2d and 3d, 
+                        for our submission slides and presentation to the Imagineering executives.<br></br><br></br>
+                        Read more about it <span><a href="http://www.philly.com/philly/education/disney-college-contest-yields-careers-as-imagineers-20180119.html" target="_blank">
+                        here</a></span> and <span><a href="https://disneyimaginations.com/2018-imaginations-finalists/" target="_blank">
+                        here</a></span>. <br></br><br></br>
+                        Tools Used: Maya, KeyShot, Photoshop, Illustrator</p>
+               
+               
 
-                <div className="row">
+                <div className="col">
                         <div class="slider">
                             {/* <a href="#slide-1">1</a>
                             <a href="#slide-2">2</a>
@@ -139,35 +215,24 @@ class Portfolio extends Component {
                             </div>
                         </div>
                     </div>
+                    </div>
                    
-                    <div className="row">
-                        <br></br>
-                        {/* <img id="kessler-slides" src={KesslerStation} alt="Kessler"/> */}
-                        <p className="p imagineering">Chosen as one of 6 teams from over 250 nationally for the 2019 Disney Imagineering Imaginations
-                        Design Competition, my team conceptualized and created Kessler Project, an all-day space adventure that allows guests to experience the excitement
-                        of space travel. I led design and development of all visual art, both 2d and 3d, 
-                        for our submission slides and presentation to the Imagineering executives.<br></br><br></br>
-                        Read more about it <span><a href="http://www.philly.com/philly/education/disney-college-contest-yields-careers-as-imagineers-20180119.html" target="_blank">
-                        here</a></span> and <span><a href="https://disneyimaginations.com/2018-imaginations-finalists/" target="_blank">
-                        here</a></span>. <br></br><br></br>
-                        Tools Used: Maya, KeyShot, Photoshop, Illustrator</p>
-               
-                </div>
-                </div>
-
-                <div className="content-container nyt">
+                  
+                {/* </div> */}
+                <br></br><br></br><br></br><br></br><br></br>
+                {/* <div className="content-container"> */}
                 <div className="row portfolio">
-                    <p className="p nyt">3 of 4<span><h3 className="h3 nyt">The New York Times</h3></span></p>
-                </div>
-                <div>
+                    <h3 className="h3 design">The New York Times</h3>
+                </div><br></br>
+                {/* <div>
                     <p className="tags">prototyping</p>
                     <p className="tags">research</p>
                     <p className="tags">coding</p>
                     <p className="tags">animation</p>
-                </div>
+                </div> */}
                 <div className="row">
                     <div>
-                        <p className="p nyt">As a Graphics intern on the Immersive Storytelling team, I 
+                        <p className="p design">As a Graphics intern on the Immersive Storytelling team, I 
                         prototyped 3-D assets to visualize AR moments, researched and tested emerging technologies, 
                         and contributed cover images and assets <span><a href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html" target="_blank">
                         here</a></span> and <span><a href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html?mtrref=undefined&gwh=52CFC0C2E69BFBA38E84AF8D367CCE69&gwt=regi&assetType=REGIWALL" target="_blank">
@@ -185,18 +250,27 @@ class Portfolio extends Component {
                       
                     </div>
                 </div>
-                </div>
-
-                <div className="content-container molex">
+                {/* </div> */}
+                <br></br><br></br><br></br><br></br><br></br>
+                {/* <div className="content-container"> */}
                 <div className="row portfolio">
-                    <p className="p molex">4 of 4<span><h3 className="h3 molex">molex</h3></span></p>
-                </div>
-                <div>
+                    <h3 className="h3 design">Molex</h3>
+                </div><br></br>
+                <div className="row">
+
+                        <p className="p design">As a Product Management Intern under the Power Signal Business Unit, I designed 3-D
+                        visuals and animations to market the company's new line 
+                        of power connectors. I also developed VR mockups and introduced KeyShot to the Digital Marketing Team to add
+                        dynamic content to their web and mobile platforms.<br></br><br></br>
+                        Tools Used: Maya, KeyShot, Illustrator, After Effects</p>
+                   
+                
+                {/* <div>
                     <p className="tags">visual design</p>
                     <p className="tags">animation</p>
                     <p className="tags">photography</p>
-                </div>
-                <div className="row">
+                </div> */}
+               
                     <div className="col">
                     {/* <video className="portfolio-img" controls>
                         <source src={FitFamiliesAnimation} type="video/mp4"/>
@@ -211,64 +285,10 @@ class Portfolio extends Component {
                         <br></br><br></br>
                     </div>
                     </div>
-                    <div className="row">
-
-                        <p className="p molex">As a Product Management Intern under the Power Signal Business Unit, I designed 3-D
-                        visuals and animations to market the company's new line 
-                        of power connectors. I also developed VR mockups and introduced KeyShot to the Digital Marketing Team to add
-                        dynamic content to their web and mobile platforms.<br></br><br></br>
-                        Tools Used: Maya, KeyShot, Illustrator, After Effects</p>
-                   
-                </div>
-                </div>
-
-                <div className="content-container">
-                <div className="row portfolio">
-                    <h3 className="h3 design">More of my visual work...</h3>
-                </div><br></br>
-                <div className="row">
-                        <p className="p design">In my free time, I run an <a href='https://www.etsy.com/shop/JessPDesign'>Etsy shop</a> on the side for graphic design. </p>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col"><img class='cropped' src={Eid} width='100%'/></div>
-                        <div class="col"><img class='cropped' src={Rivers} width='100%'/></div>
-                        <div class="col"><img class='cropped' src={Daisy} width='100%'/></div>
-                        
-                    <div class="w-100"></div><br></br>
-                    <div class="col"><img class='cropped' src={Rainbow} width='100%'/></div>
-                    <div class="col"><img class='cropped' src={House} width='100%'/></div>
-
-                    <div class="w-100"></div><br></br>
-                    <div class="col"><img class='cropped' src={Wood} width='100%'/></div>
-                    <div class="col"><img class='cropped' src={Knox} width='100%'/></div>
-                    </div>
-                </div><br></br><br></br>
-                <div className="row">
-                        <p className="p design">Personal Art Collection</p>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col"><img src={Nainai} width='100%'/></div>
-                        <div class="col"><img src={Yeye} width='100%'/></div>
-                        <div class="col"><img src={Friends} width='100%'/></div>
-                    <div class="w-100"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-                <br></br><br></br>
-                <div className="row">
-                        <p className="p design">100 Mini Portraits</p><br></br>
-                        <p className="p design">Currently working on a personal project to do 100 illustrations of what I see in the news and pop culture. All drawings are done on my iPhone using Adobe Fresco.</p>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col"><img src={Sketches} width='100%'/></div>
-                    </div>
-                </div>
                     
-                </div>
+                {/* </div> */}
+
+               
 
                 {/* <div className="container">
                 <div className="row portfolio">
@@ -292,6 +312,7 @@ class Portfolio extends Component {
                     </div>
                 </div>
                 </div> */}
+                </div>
                  <div className="content-container footer">
                 Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
                 Made with <span><img id="heart" src={heart} alt="Heart"/></span> by Jess Peng
