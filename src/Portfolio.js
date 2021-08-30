@@ -75,7 +75,7 @@ class Portfolio extends Component {
                     <h3 className="h3 design">JessPDesign</h3>
                 </div><br></br>
                 <div className="row">
-                        <p className="p design">Check out my shop <a href='https://www.etsy.com/shop/JessPDesign'>here</a> or view my full portfolio on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
+                        <p className="p design">Check out my Etsy shop <a href='https://www.etsy.com/shop/JessPDesign'>for graphic design here</a> or view my full portfolio on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
                 </div>
                 
                 <img class='cropped' src={JessPDesign} width='100%'/>
