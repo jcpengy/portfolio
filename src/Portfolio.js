@@ -80,6 +80,8 @@ class Portfolio extends Component {
                         <p className="p design">As a Technical Consultant on Adobe Campaign, I took the initiative to 
                         research, design, and code Campaignion, a web app that semi-automates workflow documentation for email marketing campaigns.</p>
                 </div>
+
+                
                 
                 <div className="row">  
                     <img class='cropped' src={Camp1} width='100%'/>
