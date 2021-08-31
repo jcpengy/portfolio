@@ -78,7 +78,7 @@ class Portfolio extends Component {
                 <br></br>
                 <div className="row">
                         <p className="p design">As a Technical Consultant on Adobe Campaign, I took the initiative to 
-                        research, design, and code Campaignion, a web app that semi-automates workflow documentation.</p>
+                        research, design, and code Campaignion, a web app that semi-automates workflow documentation for email marketing campaigns.</p>
                 </div>
                 
                 <div className="row">  
