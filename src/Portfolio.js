@@ -46,6 +46,8 @@ import Running from './assets/running.png';
 import Law from './assets/law.png'; 
 import Record from './assets/allison.png'; 
 import JessPDesign from './assets/jesspdesign.png';
+import Camp1 from './assets/campaignion-2.png'; 
+import Camp2 from './assets/campaignion-1.png';
 
 // art
 import Rodin from './assets/rodinkitchen.png'; 
@@ -71,11 +73,31 @@ class Portfolio extends Component {
         return (
         <div>
              <div className="content-container">
+             <div className="row portfolio">
+                <h3 className="h3 design">Campaignion</h3>
+                <br></br>
+                <div className="row">
+                        <p className="p design">As a Technical Consultant on Adobe Campaign, I took the initiative to 
+                        research, design, and code Campaignion, a web app that semi-automates email workflow documentation.</p>
+                </div>
+                
+                <div className="row">  
+                    <img class='cropped' src={Camp1} width='100%'/>
+                    <img class='cropped' src={Camp2} width='100%'/>
+                </div>
+            </div>
+
+                    <br></br><br></br>
+                    <p className="p design">• • • • • • •</p>
+                <br></br><br></br>
+
+
+
                 <div className="row portfolio">
                     <h3 className="h3 design">JessPDesign</h3>
-                </div><br></br>
+                <br></br>
                 <div className="row">
-                        <p className="p design">Check out my Etsy shop <a href='https://www.etsy.com/shop/JessPDesign'>for graphic design here</a> or view my full portfolio on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
+                        <p className="p design">Check out my Etsy shop for graphic design <a href='https://www.etsy.com/shop/JessPDesign'>here</a> or view my full portfolio on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
                 </div>
                 
                 <img class='cropped' src={JessPDesign} width='100%'/>
@@ -89,8 +111,10 @@ class Portfolio extends Component {
                     <div class="col"><img class='cropped' src={Law} width='100%'/></div>
                     <div class="col"><img class='cropped' src={Record} width='100%'/></div>
                     </div> */}
-                
-                <br></br><br></br><br></br><br></br><br></br>
+                </div>
+                <br></br><br></br>
+                    <p className="p design">• • • • • • •</p>
+                <br></br><br></br>
                 {/* <div className="row">
                         <p className="p design">Personal Art Collection</p>
                 </div>
@@ -119,49 +143,44 @@ class Portfolio extends Component {
                 {/* <div className="content-container"> */}
                 <div className="row portfolio">
                     <h3 className="h3 design">Adobe's Playful Palette</h3>
-                </div><br></br>
+                <br></br>
                 {/* <div className="tagsdiv">
                     <p className="tags">coding</p>
                     <p className="tags">ux design</p>
                 </div> */}
                 <div className="row">
-                <p className="p design">For my senior design project, I recreated <a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
-                          Adobe's Playful Palette</a>, an interactive parametric color mixer for artists that mimics and enhances the traditional
-                        painting process. The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history.</p>
-                        
-                   
-                </div>
-                <div className="row"> 
-                <div className="col">
-                        <img className="portfolio-img" src={Palette2} alt="Playful Palette"/><br></br><br></br>
-                        <img className="portfolio-img" src={PaletteResults2} alt="Playful Palette Results"/><br></br><br></br>
-                    </div>
-
-                    <div className="col">
-                        <img className="portfolio-img" src={Palette} alt="Playful Palette"/><br></br><br></br>
-                    </div> 
-            
-                </div>      
-                <div className="row"> 
-                <p className="p design">Tools Used: WebGL, JavaScript, HTML/CSS</p>
-                </div>
-                <div className="row"> 
-                <div className="icons portfolio">
+                <p className="p design">For my senior design project, I reimplemented <a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
+                          Adobe's Playful Palette</a>, an interactive parametric color mixer for artists that improves existing digital paint applications.
+                        The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history.<br></br><br></br>
+                        Tools Used: WebGL, JavaScript, HTML/CSS</p>
+                        <div className="icons portfolio">
                             <a href="https://docs.google.com/document/d/1AE245QrD4Qwe_OkZKNu6Izy1jiXGPli55S3L2oGW-_8/edit?usp=sharing" target="_blank"><img className="icon" src={GoogleDrive} alt="Google Drive"/></a>
                             <a href="https://www.youtube.com/watch?v=Zh1XR9ykuUw&t=1s" target="_blank"><img className="icon" src={Youtube} alt="Youtube"/></a>
                             <a href="https://github.com/jesspeng/playful-palette" target="_blank"><img className="icon" src={Github} alt="Github"/></a>
                         </div>
                 </div>
+                <div className="row"> 
+                <div className="col">
+                        <img className="portfolio-img" src={Palette2} alt="Playful Palette"/><br></br><br></br>
+                        <img className="portfolio-img" src={PaletteResults2} alt="Playful Palette Results"/>
+                </div>
+                <div className="col">
+                        <img className="portfolio-img" src={Palette} alt="Playful Palette"/><br></br><br></br>
+                </div>
+                </div> 
+                </div>
 
                    
            
-                <br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br>
+                    <p className="p design">• • • • • • •</p>
+                <br></br><br></br>
                 {/* </div> */}
 
                 {/* <div className="content-container"> */}
                 <div className="row portfolio">
                     <h3 className="h3 design">Kessler Project</h3>
-                </div>
+                
                 {/* <div>
                     <p className="tags">experience design</p>
                     <p className="tags">3d modeling</p>
@@ -169,7 +188,7 @@ class Portfolio extends Component {
                     <p className="tags">digital painting</p>
                 </div> */}
                   <div className="row">
-                        <br></br>
+               
                         {/* <img id="kessler-slides" src={KesslerStation} alt="Kessler"/> */}
                         <p className="p design">Chosen as one of 6 teams from over 250 nationally for the 2019 Walt Disney Imaginations
                         Design Competition, my team conceptualized and created Kessler Project, an all-day space adventure that allows guests to experience the excitement
@@ -216,14 +235,17 @@ class Portfolio extends Component {
                         </div>
                     </div>
                     </div>
+                    </div>
                    
                   
                 {/* </div> */}
-                <br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br>
+                    <p className="p design">• • • • • • •</p>
+                <br></br><br></br>
                 {/* <div className="content-container"> */}
                 <div className="row portfolio">
                     <h3 className="h3 design">The New York Times</h3>
-                </div><br></br>
+                <br></br>
                 {/* <div>
                     <p className="tags">prototyping</p>
                     <p className="tags">research</p>
@@ -233,12 +255,9 @@ class Portfolio extends Component {
                 <div className="row">
                     <div>
                         <p className="p design">As a Graphics intern on the Immersive Storytelling team, I 
-                        prototyped 3-D assets to visualize AR moments, researched and tested emerging technologies, 
-                        and contributed cover images and assets <span><a href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html" target="_blank">
-                        here</a></span> and <span><a href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html?mtrref=undefined&gwh=52CFC0C2E69BFBA38E84AF8D367CCE69&gwt=regi&assetType=REGIWALL" target="_blank">
-                        here</a></span>. I also did some front-end development for our intern-led 3-D Crossword <span><a href="https://johnwestwig.github.io/three-d-crossword/" target="_blank">project</a></span>.
-                        <br></br><br></br>
-                        Tools Used: Maya, Photoshop, Illustrator, After Effects, Sketchfab</p>
+                        prototyped 3-D assets to visualize AR moments, researched and tested emerging technologies like the Microsoft Hololens, 
+                        and contributed cover images and infographics in the articles below. I also developed the front-end of our intern-led 3-D Crossword <span><a href="https://johnwestwig.github.io/three-d-crossword/" target="_blank">project</a></span>.
+                        </p>
                     </div>
                     <div className="col-sm-7">
                         <img className="portfolio-img" src={Syria} alt="The New York Times"/><br></br><br></br>
@@ -249,9 +268,20 @@ class Portfolio extends Component {
                         <img className="portfolio-img" src={Syria2} alt="The New York Times"/><br></br><br></br>
                       
                     </div>
+                    <div class="row">
+                        <p className="p design">Articles where I received credit:<br></br>
+                        <a href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html" target="_blank">"How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"
+                        </a><br></br> <span><a href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html?mtrref=undefined&gwh=52CFC0C2E69BFBA38E84AF8D367CCE69&gwt=regi&assetType=REGIWALL" target="_blank">
+                        "Step Inside the Thai Cave in Augmented Reality"</a></span><br></br><br></br>
+                        Tools Used: Maya, Photoshop, Illustrator, After Effects, Sketchfab</p>
+                        </div>
+
+                </div>
                 </div>
                 {/* </div> */}
-                <br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br>
+                    <p className="p design">• • • • • • •</p>
+                <br></br><br></br>
                 {/* <div className="content-container"> */}
                 <div className="row portfolio">
                     <h3 className="h3 design">Molex</h3>

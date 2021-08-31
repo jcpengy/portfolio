@@ -440,9 +440,23 @@ h2 {
   font-size: 5em; 
 }
 
+a {
+  text-decoration: underline;
+}
+
+hr {
+  border:none;
+  border-top:2px dashed #e5a5eb;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:30%;
+}
+
 .p {
 &.about {
-  color: #e5a5eb;
+  // color: #e5a5eb;
+  color: #317cf6; 
 }
 &.playfulpalette {
   font-family: adobeRegular; 
@@ -464,7 +478,7 @@ h2 {
   font-size: 18px; 
 }
 &.design {
-  color: #e5a5eb;
+  color: #317cf6;
   text-align: center; 
 }
 }
