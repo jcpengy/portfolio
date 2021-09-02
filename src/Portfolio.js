@@ -77,14 +77,16 @@ class Portfolio extends Component {
                 <h3 className="h3 design">Campaignion</h3>
                 <br></br>
                 <div className="row">
-                        <p className="p design">As a Technical Consultant on Adobe Campaign, I took the initiative to 
-                        research, design, and code Campaignion, a web app that semi-automates workflow documentation for email marketing campaigns.</p>
+                        <p className="p design">As a Technical Consultant on Adobe Campaign, I built a web app using JavaScript to semi-automate the workflow documentation process for email campaigns.</p>
                 </div>
 
                 
                 
                 <div className="row">  
                     <img class='cropped' src={Camp1} width='100%'/>
+                    <p className="p design">The user inputs browser HTML from the Adobe Campaign interface, and the tool parses this to generate the labeled workflows and corresponding description tables. Another feature that 
+                    was incorporated after feedback was the 'Export to Word Doc' button that allows the text and images to be transferred to existing documentation. </p>
+
                     <img class='cropped' src={Camp2} width='100%'/>
                 </div>
             </div>
