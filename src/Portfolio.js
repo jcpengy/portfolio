@@ -77,17 +77,23 @@ class Portfolio extends Component {
                 <h3 className="h3 design">Campaignion</h3>
                 <br></br>
                 <div className="row">
-                        <p className="p design">As a Technical Consultant on Adobe Campaign, I built a web app using JavaScript to semi-automate the workflow documentation process for email campaigns.</p>
+                        <p className="p design">Campaignion is an internal web app I built to standardize and expedite the workflow documentation process in Adobe Campaign.
+                        </p>
                 </div>
-
-                
                 
                 <div className="row">  
+                <div className="col">
                     <img class='cropped' src={Camp1} width='100%'/>
-                    <p className="p design">The user inputs browser HTML from the Adobe Campaign interface, and the tool parses this to generate the labeled workflows and corresponding description tables. Another feature that 
-                    was incorporated after feedback was the 'Export to Word Doc' button that allows the text and images to be transferred to existing documentation. </p>
-
+                </div>
+                <div className="col">
                     <img class='cropped' src={Camp2} width='100%'/>
+                </div>
+                    
+                    <p className="p design">
+                        The tool parses workflow HTML from the Adobe Campaign browser and re-generates a numbered version with corresponding description tables. Additional features include
+                        the ability to export the text/images to Word and split up the workflow into chunks. 
+                    <br></br><br></br>
+                    Tools Used: JavaScript, React Spectrum, Adobe I/O Runtime, HTML/CSS</p>
                 </div>
             </div>
 
@@ -101,7 +107,7 @@ class Portfolio extends Component {
                     <h3 className="h3 design">JessPDesign</h3>
                 <br></br>
                 <div className="row">
-                        <p className="p design">Check out my Etsy shop for graphic design <a href='https://www.etsy.com/shop/JessPDesign'>here</a> or view my full portfolio on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
+                        <p className="p design">In my free time, I like helping people with graphic design and web development through my <a href='https://www.etsy.com/shop/JessPDesign'>Etsy shop</a>. You can view my more of my work on <a href='https://www.etsy.com/shop/JessPDesign'>Behance.</a></p>
                 </div>
                 
                 <img class='cropped' src={JessPDesign} width='100%'/>
@@ -116,7 +122,7 @@ class Portfolio extends Component {
                     <div class="col"><img class='cropped' src={Record} width='100%'/></div>
                     </div> */}
                 </div>
-                <br></br><br></br>
+                <br></br><br></br><br></br>
                     <p className="p design">• • • • • • •</p>
                 <br></br><br></br>
                 {/* <div className="row">
@@ -154,7 +160,7 @@ class Portfolio extends Component {
                 </div> */}
                 <div className="row">
                 <p className="p design">For my senior design project, I reimplemented <a href="https://research.adobe.com/publication/playful-palette-an-interactive-parametric-color-mixer-for-artists/" target="_blank">
-                          Adobe's Playful Palette</a>, an interactive parametric color mixer for artists that improves existing digital paint applications.
+                          Adobe's Playful Palette</a>, an interactive parametric color mixer for digital artists.
                         The palette allows you to blend color blobs to create gradients and easily recolor strokes with an infinite history.<br></br><br></br>
                         Tools Used: WebGL, JavaScript, HTML/CSS</p>
                         <div className="icons portfolio">
@@ -176,7 +182,7 @@ class Portfolio extends Component {
 
                    
            
-                <br></br><br></br>
+                <br></br><br></br><br></br>
                     <p className="p design">• • • • • • •</p>
                 <br></br><br></br>
                 {/* </div> */}
@@ -243,7 +249,7 @@ class Portfolio extends Component {
                    
                   
                 {/* </div> */}
-                <br></br><br></br>
+                <br></br><br></br><br></br>
                     <p className="p design">• • • • • • •</p>
                 <br></br><br></br>
                 {/* <div className="content-container"> */}
