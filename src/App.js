@@ -52,14 +52,9 @@
                 <Title></Title>
               </div>
               <div className="row home-btns">
-                <Link to="/portfolio" transition='glide-right' className="home-btn portfolio">Portfolio</Link>
-                <Link to="/about" transition='glide-left'className="home-btn about">About</Link>
+                <Link to="/portfolio" transition='glide-right' className="home-btn">Portfolio</Link>
+                <Link to="/about" transition='glide-left'className="home-btn">About</Link>
               </div>
-            </div>
-            <div className="nav home">
-              <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn" src={LinkedIn} alt="LinkedIn"/></a>
-              <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn" src={Instagram} alt="Instagram"/></a>
-              <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a>
             </div>
           </Screen>
         </Route>
@@ -76,9 +71,6 @@
         >
           <Portfolio></Portfolio>
           <div className="nav portfolio">
-            <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn" src={LinkedIn} alt="Github"/></a>
-            <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn" src={Instagram} alt="Github"/></a>
-            <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a>
             <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back} alt=""/></Link>
           </div>
         </Route>
@@ -98,9 +90,6 @@
           <About></About>
           <div className="nav about">
             <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back} alt=""/></Link>
-            <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn about" src={LinkedIn} alt="LinkedIn"/></a>
-            <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn about" src={Instagram} alt="Instagram"/></a>
-            <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a>
           </div>
           
         </Route>

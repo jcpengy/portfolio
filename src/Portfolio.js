@@ -35,13 +35,15 @@ import Github from './assets/icons/svg/032-github.svg';
 import Youtube from './assets/icons/svg/116-youtube.svg'; 
 import heart from './assets/heart-icon.png'; 
 import GoogleDrive from './assets/icons/svg/036-googledrive.svg'; 
+import LinkedIn from './assets/icons/svg/052-linkedin.svg';
+import Instagram from './assets/icons/svg/044-instagram.svg';
 
 class Portfolio extends Component {
 
     render() {
         return (
         <div>
-            <div className="content-container">
+            <div className="content-container portfolio">
 
                 <div className="row">
                     <h3>Campaignion</h3><br></br>
@@ -175,7 +177,10 @@ class Portfolio extends Component {
             
                 <div className="footer">
                     <p>Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
-                    Made with <span><img id="heart" src={heart} alt="Heart"/></span> by Jess Peng</p>
+                    Made with <span><img id="heart" src={heart} alt="Heart"/></span> by Jess Peng<br></br><br></br>
+                    <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn" src={LinkedIn} alt="Github"/></a>
+                    <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn" src={Instagram} alt="Github"/></a>
+                    <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a></p>
                 </div>
             
             </div>
