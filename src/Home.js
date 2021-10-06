@@ -91,41 +91,6 @@ class Home extends Component {
     
     return (
       <div>     
-        {/* <Title></Title> */}
-        {/* <div className="config">
-          <div className='control-wrap'>
-            <p>Speed: {speed}</p>
-              <input
-                type="range"
-                min="0"
-                max="11"
-                step="0.1"
-                value={speed}
-                onChange={this.handleSpeedChange.bind(this)} />
-          </div>
-          <div className='control-wrap'>
-            <p>Acceleration: {accelMod}</p>
-              <input
-                type="range"
-                min="0"
-                max="3"
-                step="0.1"
-                value={accelMod}
-                onChange={this.handleAccelChange.bind(this)} />
-          </div>
-        </div> */}
-{/* 
-        <div className="post">
-          <div className="pole">
-
-          </div>
-          <div className="portfolio-sign">
-
-          </div>
-          <div className="about-sign">
-
-          </div>
-        </div> */}
 
         <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>     
           <div className="body" 

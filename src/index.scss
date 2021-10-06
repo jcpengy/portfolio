@@ -22,17 +22,24 @@
   font-family: gorditaRegular;
   src: url(./assets/GorditaRegular.otf); 
 }
-
-
 @import url("https://use.typekit.net/rbk4msf.css");
 
 
 *,*:before,*:after { box-sizing: border-box; }
 
+// variables
+$title: #4A6ED9; 
+$background: #FFFAFF; 
+$linkhover: #ff4cec;
+
+
 p {
-  font-family: gorditaRegular;
-  font-weight: 100;
-  color: white;
+  font-family: gorditaRegular; 
+  color: $title;
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto; 
+  align-items: center; 
 }
 
 .config p {
@@ -286,6 +293,7 @@ $d: 140px;
 $shadow:#3A271C;
 
 .instructions p {
+  color: $title;
   position: fixed;
   bottom: 10px;
   width: 100%;
@@ -302,20 +310,16 @@ h1 {
 &.home {
   // font-weight: 600;
   line-height: 85%; 
-  color: white;
+  color: $title;
   font-size: 12em;
   margin-top: -20vw; 
 }
-&.header {
+&.about {
   font-weight: 600;
   line-height: 90%; 
-  color: #e5a5eb;
+  color: $title;
   font-size: 8em;
-  text-align: left; 
-  // margin: -vh 0 0 0; 
-}
-&.thingsilike {
-  color: white; 
+  text-align: center; 
 }
 }
 
@@ -367,35 +371,29 @@ h1 span span {
   width: 220px;
   height: 60px; 
   margin: 0em 0.3em 0.3em 0.3em;
-  border: 1px solid white; 
-  border-radius: 0.5em; 
-  box-sizing: border-box; 
   text-decoration: none; 
-  background-color: white; 
-  color: #e5a5eb; 
+  color: $title; 
+  font-size: 1.5em; 
   text-align: center; 
   animation: move-buttons 1s forwards; 
   font-family: gorditaRegular; 
 
-&.portfolio {
-  animation-delay: .3s; 
+  &.portfolio {
+    animation-delay: .3s; 
+  }
+  &.about {
+    animation-delay: .4s; 
+  }
 }
-&.about {
-  animation-delay: .4s; 
-}
-}
-
 .home-btn:hover {
-  color: pink; 
-  background-color: white; 
-  text-decoration: none; 
+  color: $linkhover; 
+  text-decoration: underline; 
 }
 
 @media screen and (max-width: 800px) {
     .content-container {
-      &.about {
-        padding-top: 80px; 
-      }
+      padding: 20% 20% 20% 20%;
+
     }
     .home-btn {
       width: 180px; 
@@ -414,21 +412,24 @@ h1 span span {
         font-size: 5em; 
       }
     }
-  
 }
 
 // END HOME
 .row {
-  justify-content: center;
   align-items: center;
+  text-align: center; 
   padding: 10px 10px; 
   // margin: 20px 20px; 
   &.portfolio {
-    justify-content: left; 
+    align-content: center;
     margin-bottom: -2em; 
   }
   &.pengandink {
-    background-color: #e5a5eb;
+    background-color: $background;
+  }
+
+  &.home-btns, &.title {
+    justify-content: center;
   }
 }
 
@@ -446,41 +447,11 @@ a {
 
 hr {
   border:none;
-  border-top:2px dashed #e5a5eb;
+  border-top:2px dashed $title;
   color:#fff;
   background-color:#fff;
   height:1px;
   width:30%;
-}
-
-.p {
-&.about {
-  // color: #e5a5eb;
-  color: #317cf6; 
-}
-&.playfulpalette {
-  font-family: adobeRegular; 
-  font-size: 18px; 
-}
-&.imagineering {
-  font-family: obvia, sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-&.nyt {
-  font-family: Georgia, serif; 
-  color: black; 
-}
-&.molex {
-  font-family: bilo, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 18px; 
-}
-&.design {
-  color: #317cf6;
-  text-align: center; 
-}
 }
 
 
@@ -488,16 +459,22 @@ hr {
   width: 100%; 
 }
 
+.project-icons {
+  position: relative; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
 .icon {
   width: 35px; 
   height: auto; 
   margin-right: 5px; 
-  filter: invert(100%) sepia(5%) saturate(4%) hue-rotate(359deg) brightness(50%) contrast(100%);
+  filter: invert(48%) sepia(71%) saturate(4648%) hue-rotate(213deg) brightness(91%) contrast(85%);
 }
 
 .icon:hover,
 .icon:focus {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  filter: invert(40%) sepia(93%) saturate(1482%) hue-rotate(280deg) brightness(102%) contrast(101%);
 }
 
 .tags {
@@ -511,41 +488,20 @@ hr {
 }
 
 h4 {
-  color: #e5a5eb;
+  color: $title;
   font-family: gorditaMedium; 
 }
-.h3 {
-  font-size: 4em; 
-  &.playful-palette {
-    font-family: adobeMedium;
-  }
-  &.imagineering {
-    font-family: nasalization, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  &.nyt {
-    font-family: acumin-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black; 
-  }
-  &.molex {
-    font-family: basic-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 5em;
-  }
-  &.design {
-    font-family: basic-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 4em;
-    color: #e5a5eb; 
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+h3 {
+  font-family: basic-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4em;
+  color: $title; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
+
 
 .tagsdiv {
 
@@ -555,33 +511,14 @@ h4 {
 }
 
 .content-container {
-  padding: 5% 20% 5% 20%; 
+  padding: 5% 20% 5% 20%;
+}
 
-  &.playful-palette {
-    background: radial-gradient(circle, rgba(255,46,255,0.6) 0%, rgba(66,227,255,1) 100%);
-  }
-  &.imagineering {
-    display:block;
-    top:0; bottom:0;
-    left:0; right:0;
-    width:100%; height:100%;
-    z-index: 0;
-	  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
-  }
-  &.nyt {
-    background-color: white; 
-  }
-  &.molex {
-    background-color: #da4e4e; 
-  }
-  &.hobbies {
-    background-color: #e4e4e4;
-  }
-  &.footer {
-    font-family: gorditaRegular; 
-    color: #e5a5eb; 
-    text-align: center;
-  }
+.footer {
+  font-family: gorditaRegular; 
+  color: $title; 
+  text-align: center;
+  margin-top: 10%; 
 }
 
 
@@ -712,21 +649,26 @@ h4 {
   height: 30px; 
   margin: 5vh 1vh 0 1vh; 
   font-family: gorditaRegular; 
-  filter: invert(55%) sepia(47%) saturate(7368%) hue-rotate(257deg) brightness(98%) contrast(98%);  
-  &.back-portfolio {
+  filter: invert(48%) sepia(71%) saturate(4648%) hue-rotate(213deg) brightness(91%) contrast(85%);
+    &.back-portfolio {
     transform: rotate(-180deg);
   }
   &.about {
-    filter: invert(67%) sepia(91%) saturate(244%) hue-rotate(251deg) brightness(100%) contrast(85%);
+    filter: invert(48%) sepia(71%) saturate(4648%) hue-rotate(213deg) brightness(91%) contrast(85%);
   }
   &.back-about {
-    filter: invert(67%) sepia(91%) saturate(244%) hue-rotate(251deg) brightness(100%) contrast(85%);
+    filter: invert(48%) sepia(71%) saturate(4648%) hue-rotate(213deg) brightness(91%) contrast(85%);
   }
 }
 
-
+a {
+  color: $title;
+}
+a:hover {
+  color: $linkhover;
+}
 .nav-btn:hover{
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);     
+  filter: invert(40%) sepia(93%) saturate(1482%) hue-rotate(280deg) brightness(102%) contrast(101%);
   &.back-portfolio {
     transform: rotate(180deg); 
     transition: all 0.5s ease-in-out; 
@@ -801,14 +743,7 @@ and (max-device-width : 480px) {
 h4 {
   font-size: 4em;
 }
-.content-container {
-  &.footer {
-    font-size: 2.5em; 
-  }
-  &.playful-palette {
-    padding-top: 200px;
-  }
-}
+
 #heart {
   width: 50px; 
 }
