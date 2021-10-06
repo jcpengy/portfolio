@@ -24,24 +24,6 @@ class Home extends Component {
       })
   }
 
-  // Speed Mod Bar
-  handleSpeedChange(e) {
-      if(parseFloat(e.target.value)) {
-          this.setState({
-              speed: e.target.value
-          })
-      }
-  }
-
-  // Acceleration Mod Bar
-  handleAccelChange(e) {
-      if(parseFloat(e.target.value)) {
-          this.setState({
-              accelMod: e.target.value
-          })
-      }
-  }
-
   movement() {
       let {droidX, mouseX, speed, accelMod} = this.state;
 
