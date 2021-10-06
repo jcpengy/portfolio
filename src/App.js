@@ -5,7 +5,7 @@ import "react-tiger-transition/styles/main.min.css";
 import 'react-slideshow-image/dist/styles.css'
 import "./index.scss";
 
-import { Navigation, Route, Screen, Link, glide, unfold } from "react-tiger-transition";
+import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
 import Home from './Home'; 
 import Portfolio from './Portfolio'; 
 import About from './About'; 
@@ -15,7 +15,6 @@ import Back from './assets/previous.svg';
 import LinkedIn from './assets/icons/svg/052-linkedin.svg';
 import Instagram from './assets/icons/svg/044-instagram.svg';
 import Github from './assets/icons/svg/032-github.svg';
-import Behance from './assets/icons/svg/007-behance.svg'; 
 
 // inject glide styles
 glide({
@@ -61,10 +60,9 @@ export default () => (
             </div>
           </div>
           <div className="nav home">
-            <a href="https://www.behance.net/jesspdesign" target="_blank"><img className="nav-btn" src={Behance}/></a>
-            <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
-            <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
-            {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
+            <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn" src={LinkedIn} alt="LinkedIn"/></a>
+            <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn" src={Instagram} alt="Instagram"/></a>
+            <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a>
           </div>
         </Screen>
       </Route>
@@ -81,11 +79,10 @@ export default () => (
       >
         <Portfolio></Portfolio>
         <div className="nav portfolio">
-          <a href="https://www.behance.net/jesspdesign" target="_blank"><img className="nav-btn" src={Behance}/></a>
-          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn" src={LinkedIn}/></a>
-          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn" src={Instagram}/></a>
-          {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
-          <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back}/></Link>
+          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn" src={LinkedIn} alt="Github"/></a>
+          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn" src={Instagram} alt="Github"/></a>
+          <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a>
+          <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back} alt=""/></Link>
         </div>
       </Route>
     
@@ -103,11 +100,10 @@ export default () => (
         
         <About></About>
         <div className="nav about">
-          <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back}/></Link>
-          <a href="https://www.behance.net/jesspdesign" target="_blank"><img className="nav-btn about" src={Behance}/></a>
-          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank"><img className="nav-btn about" src={LinkedIn}/></a>
-          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank"><img className="nav-btn about" src={Instagram}/></a>
-          {/* <a href="https://github.com/jcpengy" target="_blank"><img className="nav-btn" src={Github}/></a> */}
+          <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back} alt=""/></Link>
+          <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn about" src={LinkedIn} alt="LinkedIn"/></a>
+          <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn about" src={Instagram} alt="Instagram"/></a>
+          <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a>
         </div>
         
       </Route>

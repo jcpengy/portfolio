@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import body from './assets/body.png'; 
 import mouth from './assets/mouth.png'; 
-import Title from './Title'; 
 
 class Home extends Component {
   
@@ -12,9 +11,9 @@ class Home extends Component {
       this.state = {
           droidX: 0,
           mouseX: 0,
-          toTheRight: true,
-          speed: 2,
-          accelMod: 1
+          toTheRight: true, 
+          speed: 1, 
+          accelMod: 2
       }
   }
 
@@ -86,9 +85,9 @@ class Home extends Component {
   componentWillUnmount() {
       document.removeEventListener('mousemove', (e) => this.handleMouseMove(e));
   }
-
+//hello
   render() {
-    let {speed, accelMod, droidX, mouseX, toTheRight} = this.state;
+    let { speed, accelMod, droidX, mouseX, toTheRight} = this.state;
     
     return (
       <div>     
@@ -131,13 +130,13 @@ class Home extends Component {
         <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>     
           <div className="body" 
                style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 15}deg)`}}>
-              <img className="img-body" src={body}></img>
+              <img className="img-body" src={body} alt=""></img>
 
               <div className={'eyes ' + (toTheRight ? 'right' : '')}>
                 <div className="eye one"></div>
                 <div className="eye two"></div>
                 <div className="mouth">
-                  <img className="img-mouth" src={mouth}></img>
+                  <img className="img-mouth" src={mouth} alt=""></img>
                 </div>
               </div>
 
@@ -174,7 +173,6 @@ class Home extends Component {
 
       </div>
     )
-  
   }
 }
 
