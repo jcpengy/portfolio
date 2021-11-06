@@ -376,7 +376,8 @@ h1 span span {
 }
 .home-btn:hover {
   color: $linkhover; 
-  text-decoration: underline; 
+  text-decoration: none;
+  font-weight: bold; 
 }
 // END HOME
 
@@ -686,6 +687,9 @@ h4 {
 }
 
 // contact form 
+#contact-form {
+  font-family: gorditaRegular;
+}
 .btn-primary {
   background-color: $title; 
 }

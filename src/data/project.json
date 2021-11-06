@@ -1,0 +1,32 @@
+[
+        {
+            "name": "Campaignion", 
+            "description": "Campaignion is an internal web application I built to standardize and expedite the workflow documentation process in Adobe Campaign. It parses browser HTML and generates a numbered workflow with description tables that can be exported to Word.", 
+            "images": [
+                "/project_images/campaignion-2.png", 
+                "/project_images/campaignion-1.png"
+            ],
+            "tools": "Tools Used: JavaScript, React Spectrum, Adobe I/O Runtime, HTML/CSS", 
+            "link:": ""
+        }, 
+        {
+            "name": "Adobe's Playful Palette", 
+            "description": "For my senior design project, I re-implemented Adobe's Playful Palette, an interactive parametric color mixer for digital artists. You can blend color blobs to create gradients and easily recolor strokes with an infinite history.", 
+            "images": [
+                "/project_images/playfulpalette2.jpg", 
+                "/project_images/playfulpalette.png"
+            ],
+            "tools": "Tools Used: JavaScript, WebGL, HTML/CSS",
+            "link": "https://docs.google.com/document/d/1AE245QrD4Qwe_OkZKNu6Izy1jiXGPli55S3L2oGW-_8/edit?usp=sharing"
+        }, 
+        {
+            "name": "The New York Times", 
+            "description": "As a Graphics intern on the Immersive Storytelling team, I prototyped 3-D assets to visualize AR moments, researched and tested emerging technologies like the Microsoft Hololens, and contributed graphics in the articles below. I also styled and contributed to UI functionality in our intern-led 3-D Crossword project built using Three.js.", 
+            "images": [
+                "/project_images/nytcrossword.jpg",
+                "/project_images/syriacover.jpg"
+            ],
+            "tools": "Tools Used: Maya, Photoshop, Illustrator, After Effects, Sketchfab",
+            "link": "https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html"
+        }   
+]

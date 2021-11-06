@@ -6,10 +6,10 @@
   import "./index.scss";
 
   import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
-  import Home from './Home'; 
-  import Portfolio from './Portfolio'; 
-  import About from './About'; 
-  import Title from './Title'; 
+  import Home from './components/Home'; 
+  import Portfolio from './components/Portfolio'; 
+  import About from './components/About'; 
+  import Title from './components/Title'; 
 
   import Back from './assets/previous.svg'; 
 
