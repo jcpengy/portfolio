@@ -7,15 +7,6 @@ import Footer from './Footer';
 class Portfolio extends Component {
 
     render() {
-        function showLink(link) {
-            if (link) {
-                return (
-                    <>
-                        <a href={link} target="_blank" rel="noreferrer">Project Link</a>
-                    </>
-                )
-            }
-        }
         const ProjectData = Projects.map(
             (project) => {
                 return (
@@ -25,14 +16,19 @@ class Portfolio extends Component {
                         <p>{project.description}</p>
                         <div className="row">  
                             <div className="col-sm-6">
-                                <img class='cropped' src={project.images[0]} width='100%' alt="Campaignion Input"/><br></br><br></br>
+                                <img class='cropped' key={project.images[0].url} src={project.images[0].url} width='100%' alt={project.images[0].alt}/><br></br><br></br>
                             </div>
                             <div className="col-sm-6">
-                                <img class='cropped' src={project.images[1]} width='100%'alt="Campaignion Output"/><br></br><br></br>
+                                <img class='cropped' key={project.images[1].url} src={project.images[1].url} width='100%' alt={project.images[1].alt}/><br></br><br></br>
                             </div>
                         </div>    
                         <p>{project.tools}<br></br><br></br>
-                            {showLink(project.link)}
+                        {project.links && 
+                        project.links.map(
+                            (link) => {
+                                return <><a href={link.src} key={link.name} target="_blank" rel="noreferrer">{link.name}</a><br></br></>;
+                            }
+                        )}
                         </p>
                     </div>
 
