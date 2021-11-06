@@ -304,6 +304,13 @@ h1 {
   font-size: 8em;
   text-align: center; 
 }
+&.contact {
+  font-weight: 600;
+  line-height: 90%; 
+  color: $title;
+  font-size: 3em;
+  text-align: center; 
+}
 }
 
 h1 span span {
@@ -676,7 +683,15 @@ h4 {
 .h3 {
   font-size: 3em; 
 }
+}
 
+// contact form 
+.btn-primary {
+  background-color: $title; 
+}
+
+input, label {
+  color: $title; 
 }
 
 

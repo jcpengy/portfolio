@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import Contact from './Contact'; 
 
 import heart from './assets/heart-icon.png';
 import cartoon from './assets/cartoon.jpg'; 
@@ -19,11 +20,14 @@ class About extends Component {
                         in Fine Arts at the University of Pennsylvania, where I graduated from the School of Engineering in May 2019.<br></br><br></br>
                         In my free time, I like drawing, cartooning on @peng.and.ink, watching stand-up/reality tv, and running. <br></br><br></br></p>
                                 
-                        <img id='cartoon' src={cartoon} alt="cartoon"/>
+                        {/* <img id='cartoon' src={cartoon} alt="cartoon"/> */}
                     </div>
+                    <br></br><br></br>
+                    <p>• • • • • • •</p>
+                    <br></br><br></br>
+                    <Contact></Contact>
                     <div className="footer">
-                        <p>Any questions? Feel free to email me at pengjess2@gmail.com.<br></br><br></br>
-                        Made with <span><img id="heart" src={heart} alt="Heart"/></span> by Jess Peng<br></br><br></br>
+                        <p>Made with <span><img id="heart" src={heart} alt="Heart"/></span> by Jess Peng<br></br><br></br>
                         <a href="https://www.linkedin.com/in/jess-peng/" target="_blank" rel="noreferrer"><img className="nav-btn" src={LinkedIn} alt="Github"/></a>
                         <a href="https://www.instagram.com/peng.and.ink/?hl=en" target="_blank" rel="noreferrer"><img className="nav-btn" src={Instagram} alt="Github"/></a>
                         <a href="https://github.com/jcpengy" target="_blank" rel="noreferrer"><img className="nav-btn" src={Github} alt="Github"/></a></p>

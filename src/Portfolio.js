@@ -141,7 +141,7 @@ class Portfolio extends Component {
                     <div className="row">  
                         <div className="col-sm-7">
                             <img className="portfolio-img" src={Syria} alt="The New York Times"/><br></br><br></br>
-                            <img className="portfolio-img" src={Thai2} alt="The New York Times"/><br></br><br></br>
+                            <img className="portfolio-img" src={Crossword} alt="The New York Times"/><br></br><br></br>
                         </div>
                         <div className="col-sm-5">
                             <img className="portfolio-img" src={Syria2} alt="The New York Times"/><br></br><br></br>

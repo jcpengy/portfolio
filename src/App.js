@@ -12,9 +12,6 @@
   import Title from './Title'; 
 
   import Back from './assets/previous.svg'; 
-  import LinkedIn from './assets/icons/svg/052-linkedin.svg';
-  import Instagram from './assets/icons/svg/044-instagram.svg';
-  import Github from './assets/icons/svg/032-github.svg';
 
   // inject glide styles
   glide({
