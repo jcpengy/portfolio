@@ -12,21 +12,21 @@ class Portfolio extends Component {
                 return (
                     <>
                     <div className="row">
-                        <h3>{project.name}</h3><br></br>
-                        <p>{project.description}</p>
+                        <h3 key={project.name}>{project.name}</h3><br></br>
+                        <p key={project.description}>{project.description}</p>
                         <div className="row">  
                             <div className="col-sm-6">
-                                <img class='cropped' key={project.images[0].url} src={project.images[0].url} width='100%' alt={project.images[0].alt}/><br></br><br></br>
+                                <img className='cropped' key={project.images[0].url} src={project.images[0].url} width='100%' alt={project.images[0].alt}/><br></br><br></br>
                             </div>
                             <div className="col-sm-6">
-                                <img class='cropped' key={project.images[1].url} src={project.images[1].url} width='100%' alt={project.images[1].alt}/><br></br><br></br>
+                                <img className='cropped' key={project.images[1].url} src={project.images[1].url} width='100%' alt={project.images[1].alt}/><br></br><br></br>
                             </div>
                         </div>    
                         <p>{project.tools}<br></br><br></br>
                         {project.links && 
                         project.links.map(
                             (link) => {
-                                return <><a href={link.src} key={link.name} target="_blank" rel="noreferrer">{link.name}</a><br></br></>;
+                                return <><a href={link.src} key={link.src} target="_blank" rel="noreferrer">{link.name}</a><br></br></>;
                             }
                         )}
                         </p>

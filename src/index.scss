@@ -444,6 +444,10 @@ hr {
 h4 {
   color: $title;
   font-family: gorditaMedium; 
+  font-size: 2em;
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 h3 {
@@ -668,10 +672,6 @@ and (max-device-width : 480px) {
   font-size: 1.5em;
   margin-top: -10vh;
   padding-bottom: 50px; 
-}
-
-h4 {
-  font-size: 4em;
 }
 
 #heart {

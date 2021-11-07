@@ -16,19 +16,19 @@ class Contact extends Component {
           };
         return(
             <div>
-                <h1 class="h1 contact">any questions?</h1>
+                <h1 className="h1 contact">any questions?</h1>
                 <p>Feel free to send a message below!</p>
                 <form id="contact-form" onSubmit={sendEmail}>
                     <div className="form-group">
-                        <label for="name">Name</label>
+                        <label htmlFor="name">Name</label>
                         <input type="text" id="name" className="form-control" name="name"/>
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputEmail1">Email</label>
+                        <label htmlFor="exampleInputEmail1">Email</label>
                         <input type="email" id="exampleInputEmail1" className="form-control" aria-describedby="emailHelp" name="email"/>
                     </div>
                     <div className="form-group">
-                        <label for="message">Message</label>
+                        <label htmlFor="message">Message</label>
                         <textarea id="message" className="form-control" rows="5" name="message"></textarea>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
