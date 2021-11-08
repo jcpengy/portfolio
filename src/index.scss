@@ -482,48 +482,54 @@ h3 {
 }
 
 //slider 
-.slider {
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-}
+// .slider {
+//   width: 100%;
+//   text-align: center;
+//   overflow: hidden;
+// }
 
-.slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+// .slides {
+//   display: flex;
+//   overflow-x: auto;
+//   scroll-snap-type: x mandatory;
+//   scroll-behavior: smooth;
+//   -webkit-overflow-scrolling: touch;
   
-  scroll-snap-points-x: repeat(100%);
-  scroll-snap-type: mandatory;
-}
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.slides::-webkit-scrollbar-thumb {
-  background: #5d9eba;
-  border-radius: 10px;
-}
-.slides::-webkit-scrollbar-track {
-  background: rgba(#5d9eba, 0.5);
-  border-radius: 10px; 
-}
-.slides > div {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 100%;
-  margin-right: 30px;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
+//   scroll-snap-points-x: repeat(100%);
+//   scroll-snap-type: mandatory;
+// }
+// .slides::-webkit-scrollbar {
+//   width: 10px;
+//   height: 10px;
+// }
+// .slides::-webkit-scrollbar-thumb {
+//   background: #5d9eba;
+//   border-radius: 10px;
+// }
+// .slides::-webkit-scrollbar-track {
+//   background: rgba(#5d9eba, 0.5);
+//   border-radius: 10px; 
+// }
+// .slides > div {
+//   scroll-snap-align: start;
+//   flex-shrink: 0;
+//   width: 100%;
+//   margin-right: 30px;
+//   transform-origin: center center;
+//   transform: scale(1);
+//   transition: transform 0.5s;
+//   position: relative;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // font-size: 100px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // font-size: 100px;
+// }
+
+.cropped {
+  width: 100%; /* width of container */
+  height: auto; /* height of container */
+  object-fit: cover;
 }
 
 #heart {
@@ -578,9 +584,6 @@ h3 {
     width: 50px; 
     height: 50px;  
   }
-  &.home {
-
-  }
   &.about {
     filter: invert(48%) sepia(71%) saturate(4648%) hue-rotate(213deg) brightness(91%) contrast(85%);
   }
@@ -604,6 +607,16 @@ h3 {
   } 
 }
 
+.footer-icon {
+  width: 30px; 
+  height: 30px; 
+  margin: 0 1vh 0 1vh;
+  filter: invert(48%) sepia(71%) saturate(4648%) hue-rotate(213deg) brightness(91%) contrast(85%);
+}
+.footer-icon:hover {
+  filter: invert(40%) sepia(93%) saturate(1482%) hue-rotate(280deg) brightness(102%) contrast(101%);
+}
+
 a {
   color: $title;
   text-decoration: underline; 
@@ -617,8 +630,44 @@ a:hover {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+p, label {
+  font-size: 2em;
+}
+.content-container {
+  &.about, &.portfolio {
+    padding: 20% 5% 20% 5%;
+  }
+}
+.footer-icon {
+  width: 50px; 
+  height: auto; 
+  margin-right: 15px; 
+}
+
+// about page
+h4 {
+  font-size: 3.5em;
+}
+
+// contact form
+h1 {
+  &.contact {
+    font-size: 4em;
+  }
+}
+.btn-primary {
+  font-size: 2.5em;
+  padding: 20px 50px; 
+}
+
+.form-control {
+  padding: 50px 30px;
+  line-height: 140%;
+}
+
 /* Styles */
 .nav {
+  background-color: $background;
   &.about {
     left: 1vh; 
   }
@@ -629,22 +678,13 @@ and (max-device-width : 480px) {
 .nav-btn {
   margin: 0 0.5vh 0 0.5vh; 
   &.back-portfolio, &.back-about {
-    margin: 5vh 1vh 0 1vh; 
+    margin: 3vh 1vh 0 1vh; 
     width: 100px; 
     height: 100px; 
   }
 }
 .home-btn {
-  font-size: 2em; 
-}
-
-.content-container {
-  &.portfolio {
-    padding: 20% 5% 20% 5%;
-  }
-  &.about {
-    padding: 5% 5% 5% 5%;
-  }
+  font-size: 2.25em; 
 }
 
 @keyframes move-nav-home {
@@ -663,8 +703,18 @@ and (max-device-width : 480px) {
 }
 
 .instructions p {
-  bottom: 10px;
-  font-size: 2em;
+  display: none;
+}
+
+.instructions:after {
+  content: 'click anywhere.';
+  font-family: gorditaRegular;
+  bottom: 250px;
+  color: $title;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 2.2em;
 }
 
 // title 
@@ -717,14 +767,6 @@ and (min-width : 1224px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-}
-
-#cartoon {
-  width: 40%; 
-  height: auto; 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 

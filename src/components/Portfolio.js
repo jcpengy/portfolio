@@ -3,6 +3,8 @@
 import React, { Component } from 'react'; 
 import Projects from '../data/project.json'; 
 import Footer from './Footer';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 class Portfolio extends Component {
 
@@ -13,22 +15,28 @@ class Portfolio extends Component {
                     <>
                     <div className="row">
                         <h3 key={project.name}>{project.name}</h3><br></br>
-                        <p key={project.description}>{project.description}</p>
-                        <div className="row">  
-                            <div className="col-sm-6">
-                                <img className='cropped' key={project.images[0].url} src={project.images[0].url} width='100%' alt={project.images[0].alt}/><br></br><br></br>
-                            </div>
-                            <div className="col-sm-6">
-                                <img className='cropped' key={project.images[1].url} src={project.images[1].url} width='100%' alt={project.images[1].alt}/><br></br><br></br>
-                            </div>
-                        </div>    
-                        <p>{project.tools}<br></br><br></br>
-                        {project.links && 
-                        project.links.map(
-                            (link) => {
-                                return <><a href={link.src} key={link.src} target="_blank" rel="noreferrer">{link.name}</a><br></br></>;
+                        <Carousel>
+                            {project.images && 
+                                project.images.map(
+                                    (image) => {
+                                        return <>
+                                        <div>
+                                            <img key={image.url} src={image.url} alt={image.alt}/>
+                                        </div>
+                                        </>;
+                                    }
+                                )
                             }
-                        )}
+                        </Carousel>
+                        <p key={project.description}>{project.description}</p>
+                        <p>{project.tools}<br></br><br></br>
+                            {project.links && 
+                                project.links.map(
+                                    (link) => {
+                                        return <><a href={link.src} key={link.src} target="_blank" rel="noreferrer">{link.name}</a><br></br></>;
+                                    }
+                                )
+                            }
                         </p>
                     </div>
 

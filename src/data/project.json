@@ -1,7 +1,7 @@
 [
         {
             "name": "Campaignion", 
-            "description": "Campaignion is an internal web application I built to standardize and expedite the workflow documentation process in Adobe Campaign. It parses browser HTML and generates a numbered workflow with description tables that can be exported to Word.", 
+            "description": "Campaignion is a web application I built using JavaScript to standardize and expedite the workflow documentation process in Adobe Campaign Standard. The tool uses a variation of Breadth First Search to parse HTML from the Developer Console and number the activities in the workflow accordingly. It also outputs description tables corresponding to the activites (which can be broken down for larger workflows) and provides an option to export the generated documentation to Word.", 
             "images": [
                 {
                     "url": "/project_images/campaignion-2.png",
@@ -13,12 +13,12 @@
                 } 
                 
             ],
-            "tools": "Tools Used: JavaScript, React Spectrum, Adobe I/O Runtime, HTML/CSS", 
+            "tools": "JavaScript, React Spectrum, Adobe I/O Runtime, HTML/CSS", 
             "links:": null
         }, 
         {
             "name": "Adobe's Playful Palette", 
-            "description": "For my senior design project, I re-implemented Adobe's Playful Palette, an interactive parametric color mixer for digital artists. You can blend color blobs to create gradients and easily recolor strokes with an infinite history.", 
+            "description": "For my senior project in Spring 2019, I re-implemented Adobe's Playful Palette, an interactive parametric color mixer for digital artists, in WebGL and JavaScript. Users can blend color gamuts to create gradients and retrieve past mixing dishes to easily recolor strokes in the artwork. To implement the color blending, I used a variant of the metaball function.", 
             "images": [
                 {
                     "url": "/project_images/playfulpalette2.jpg", 
@@ -29,7 +29,7 @@
                     "alt": "Playful Palette 2"
                 }
             ],
-            "tools": "Tools Used: JavaScript, WebGL, HTML/CSS",
+            "tools": "JavaScript, WebGL, HTML/CSS",
             "links": [
                 {
                     "name": "Demo",
@@ -51,7 +51,7 @@
         }, 
         {
             "name": "The New York Times", 
-            "description": "As a Graphics intern on the Immersive Storytelling team, I prototyped 3-D assets to visualize AR moments, researched and tested emerging technologies like the Microsoft Hololens, and contributed graphics in the articles below. I also styled and contributed to UI functionality in our intern-led 3-D Crossword project built using Three.js.", 
+            "description": "As a Graphics Intern on the Immersive Storytelling team, I prototyped 3-D assets to visualize AR moments, researched and tested emerging technologies like the Microsoft Hololens, and contributed graphics in the articles below. I also worked on the intern-led 3-D Crossword game built using Three.js, where I set up the camera and worked on UI functionality.", 
             "images": [
                 {
                     "url": "/project_images/nytcrossword.jpg",
@@ -62,7 +62,7 @@
                     "alt": "Article Cover"
                 }
             ],
-            "tools": "Tools Used: Maya, Photoshop, Illustrator, After Effects, Sketchfab",
+            "tools": "JavaScript, HTML/CSS, Three.js, Maya, Photoshop, Illustrator, After Effects, Sketchfab",
             "links": [
                 {
                     "name": "3D Crossword Demo", 
@@ -79,27 +79,19 @@
             ]
         },
         {
-            "name": "The Daily Pennsylvanian", 
-            "description": "As a Web Developer, I worked on front-end and back-end components of interactive project pages for The Daily Pennsylvanian. I also built the first online game for Under the Button written entirely in vanilla JavaScript.", 
+            "name": "UTBiden: The Video Game", 
+            "description": "As an Interactive Web Developer for The Daily Pennsylvanian, I created the newspaper’s first online game written entirely in vanilla JavaScript. In each game loop, objects are randomly spawned and stored in an array to be moved down the screen and checked for collisions. Players get points by collecting ice cream cones, lose lives by hitting squirrels and people handing out flyers, and gain lives by hitting DP newspaper stands.", 
             "images": [
-                {
-                    "url": "/project_images/dining-guide-2018.png",
-                    "alt": "Dining Guide 2018"
-                },
                 {
                     "url": "/project_images/utbiden.png", 
                     "alt": "UTBiden"
                 }
             ],
-            "tools": "Tools Used: JavaScript, Bootstrap, Gatsby, HTML/CSS",
+            "tools": "JavaScript, Bootstrap, Gatsby, HTML/CSS",
             "links": [
                 {
                     "name": "Play UTBiden: The Video Game", 
                     "src": "https://projects.underthebutton.com/utbiden/"
-                },
-                {
-                    "name": "Dining Guide Fall 2018", 
-                    "src": "https://dailypenn.github.io/old.projects.34st.com/2018/09/dining-guide/"
                 }
             ]
         }

@@ -72,10 +72,9 @@ class Home extends Component {
     
     return (
       <div>     
-
         <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>     
           <div className="body" 
-               style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 15}deg)`}}>
+               style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 20}deg)`}}>
               <img className="img-body" src={body} alt=""></img>
 
               <div className={'eyes ' + (toTheRight ? 'right' : '')}>
@@ -92,7 +91,6 @@ class Home extends Component {
               </div>
 
               <div className={'eyebrows ' + (toTheRight ? 'right' : '')}>
-
                 <div className="eyebrow one"></div>
                 <div className="eyebrow two"></div>
               </div>
@@ -100,8 +98,8 @@ class Home extends Component {
 
           <div className="scooter">
             <div className="scooter base"></div>
-            <div className="scooter top" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 5}deg)`}}></div>
-            <div className="scooter handle" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 10}px) rotateZ(${(mouseX - droidX) / 5}deg)`}}></div>
+            <div className="scooter top" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 25}deg)`}}></div>
+            <div className="scooter handle" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 10}px) rotateZ(${(mouseX - droidX) / 15}deg)`}}></div>
           </div>
 
           <div className="ball-left" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>

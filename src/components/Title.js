@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 class SplitText extends Component {
     render() {
         return(
+            // add animation to each character of text
             <span aria-label={this.props.copy} role={this.props.role}>
                 {this.props.copy.split("").map(function(char, index) {
                     let style = {"animation-delay": (index/20)+"s"}
