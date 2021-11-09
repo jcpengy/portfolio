@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react'; 
 import Projects from '../data/project.json'; 
 import Footer from './Footer';

@@ -28,6 +28,7 @@
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#FFFAFF"
     // overflow: "visible"
   };
 
@@ -39,7 +40,6 @@
         <Route exact path="/">
           <Screen
             style={{
-              backgroundColor: "#FFFAFF",
               ...screenStyle
             }}
           >
@@ -61,7 +61,6 @@
           screen // shorthand to wrap children with screen
           screenProps={{
             style: {
-              backgroundColor: "#FFFAFF",
               ...screenStyle
             }
           }}
@@ -75,15 +74,13 @@
         <Route
           exact
           path="/about"
-          screen // shorthand to wrap children with screen
+          screen 
           screenProps={{
             style: {
-              backgroundColor: "#FFFAFF",
               ...screenStyle
             }
           }}
         >
-          
           <About></About>
           <div className="nav about">
             <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back} alt=""/></Link>

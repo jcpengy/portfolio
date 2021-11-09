@@ -1,7 +1,7 @@
 [
         {
             "name": "Campaignion", 
-            "description": "Campaignion is a web application I built using JavaScript to standardize and expedite the workflow documentation process in Adobe Campaign Standard. The tool uses a variation of Breadth First Search to parse HTML from the Developer Console and number the activities in the workflow accordingly. It also outputs description tables corresponding to the activites (which can be broken down for larger workflows) and provides an option to export the generated documentation to Word.", 
+            "description": "Campaignion is a web application I built using JavaScript to standardize and expedite the workflow documentation process in Adobe Campaign Standard. The tool uses a variation of Breadth First Search to parse HTML from the Developer Console and number the activities in the workflow accordingly. It also outputs description tables corresponding to the activities (which can be broken down for larger workflows) and provides an option to export the generated documentation to Word.", 
             "images": [
                 {
                     "url": "/project_images/campaignion-2.png",

@@ -3,9 +3,9 @@ import emailjs from 'emailjs-com';
 
 class Contact extends Component {
     render() {
+        // uses EmailJS service to send emails from JavaScript
         function sendEmail(event){
             event.preventDefault();
-        
             emailjs.sendForm('service_iiv27mk', 'template_qtpg0mf', event.target, 'user_QYBLsZwX1mO2QUvM1Q8pz')
               .then((result) => {
                   console.log(result.text);
@@ -24,8 +24,8 @@ class Contact extends Component {
                         <input type="text" id="name" className="form-control" name="name"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email</label>
-                        <input type="email" id="exampleInputEmail1" className="form-control" aria-describedby="emailHelp" name="email"/>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" id="email" className="form-control" aria-describedby="emailHelp" name="email"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
