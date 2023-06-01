@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+• Delete node_modules, package-lock.json, and yarn lock files
+• npm install yarn
+• yarn install
+• yarn start 
+
 ## Available Scripts
 
 In the project directory, you can run:

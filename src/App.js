@@ -3,7 +3,7 @@
 
   import "react-tiger-transition/styles/main.min.css";
   import 'react-slideshow-image/dist/styles.css'
-  import "./index.scss";
+  import "./index.css";
 
   import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
   import Home from './components/Home'; 
@@ -11,7 +11,8 @@
   import About from './components/About'; 
   import Title from './components/Title'; 
 
-  import Back from './assets/previous.svg'; 
+  import Back from './assets/previous.svg';
+  import GraphicDesign from "./components/GraphicDesign";
 
   // inject glide styles
   glide({
@@ -49,8 +50,8 @@
                 <Title></Title>
               </div>
               <div className="row home-btns">
-                <Link to="/portfolio" transition='glide-right' className="home-btn">Portfolio</Link>
-                <Link to="/about" transition='glide-left'className="home-btn">About</Link>
+                <Link to="/about" transition='glide-right'className="home-btn">About</Link>
+                <Link to="/portfolio" transition='glide-left' className="home-btn">Portfolio</Link>
               </div>
             </div>
           </Screen>
@@ -67,10 +68,9 @@
         >
           <Portfolio></Portfolio>
           <div className="nav portfolio">
-            <Link to="/" transition='glide-left'><img className="nav-btn back-portfolio" src={Back} alt=""/></Link>
+            <Link to="/" transition='glide-right'><img className="nav-btn back-portfolio" src={Back} alt=""/></Link>
           </div>
         </Route>
-      
         <Route
           exact
           path="/about"
@@ -83,7 +83,7 @@
         >
           <About></About>
           <div className="nav about">
-            <Link to="/" transition='glide-right'><img className="nav-btn back-about" src={Back} alt=""/></Link>
+            <Link to="/" transition='glide-left'><img className="nav-btn back-about" src={Back} alt=""/></Link>
           </div>
           
         </Route>
