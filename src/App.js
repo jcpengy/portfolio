@@ -51,14 +51,14 @@
               </div>
               <div className="row home-btns">
                 <Link to="/about" transition='glide-right'className="home-btn">About</Link>
-                <Link to="/portfolio" transition='glide-left' className="home-btn">Portfolio</Link>
+                <Link to="/projects" transition='glide-left' className="home-btn">Portfolio</Link>
               </div>
             </div>
           </Screen>
         </Route>
         <Route
           exact
-          path="/portfolio"
+          path="/projects"
           screen // shorthand to wrap children with screen
           screenProps={{
             style: {
