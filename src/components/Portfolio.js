@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Back from "../assets/previous.svg";
 import GraphicDesign from "./GraphicDesign";
 import UXDesign from "./UXDesign";
-import {ActionButton, Flex, Link,} from "@adobe/react-spectrum";
+// import {ActionButton, Flex, Link,} from "@adobe/react-spectrum";
 
 const Portfolio = () => {
 
@@ -54,12 +54,12 @@ const Portfolio = () => {
     return (
         <div>
             <div className="content-container portfolio">
-                <Flex direction="column" alignItems="center">
-                    <Flex id="portfolio-navbar" direction="row" gap="size-300">
-                        <Link onPress={() => setSelectedGraphicDesign(false)}>UX Design</Link>
-                        <Link onPress={() => setSelectedGraphicDesign(true)}>Graphic Design</Link>
-                    </Flex>
-                </Flex>
+                {/*<Flex direction="column" alignItems="center">*/}
+                {/*    <Flex id="portfolio-navbar" direction="row" gap="size-300">*/}
+                {/*        <Link onPress={() => setSelectedGraphicDesign(false)}>UX Design</Link>*/}
+                {/*        <Link onPress={() => setSelectedGraphicDesign(true)}>Graphic Design</Link>*/}
+                {/*    </Flex>*/}
+                {/*</Flex>*/}
 
                 {selectedGraphicDesign ? <GraphicDesign/> : <UXDesign/>}
                 <Footer></Footer>

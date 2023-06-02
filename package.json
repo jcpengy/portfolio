@@ -1,10 +1,9 @@
 {
-  "name": "portfolio2021",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jcpengy.github.io/portfolio",
   "dependencies": {
-    "@adobe/react-spectrum": "^3.7.0",
-    "@react-spectrum/tabs": "^3.0.0-alpha.3",
     "@steveeeie/react-page-transition": "^1.2.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -12,8 +11,8 @@
     "autoscroll-react": "^3.2.0",
     "bootstrap": "^4.6.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-animated-text": "^0.1.4",
     "react-dom": "^17.0.1",
@@ -25,9 +24,12 @@
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.9.0",
     "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "set \"CI=false\" && react-scripts build",
     "test": "react-scripts test",

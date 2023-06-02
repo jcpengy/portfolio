@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Contact from './Contact';
 
 import Footer from './Footer';
-import {Flex} from "@adobe/react-spectrum";
+// import {Flex} from "@adobe/react-spectrum";
 
 class UXDesign extends Component {
     render() {
@@ -25,34 +25,34 @@ class UXDesign extends Component {
                         <h5>Requirements</h5><br/>
                         <img id="full-width" key="milestones" src="/project_images/AEPArtifactCopyApp/milestones.png" alt="milestones"/><br/><br/><br/>
                         <p>The app needed to accomplish the following:</p><br/>
-                        <Flex direction="row">
-                            <Flex direction="column" width="50%">
-                                <p id="list">
-                                    • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
-                                    first level dependencies<br/>
-                                    • Review dependencies before initiating copy<br/>
-                                </p>
-                            </Flex>
-                            <Flex direction="column" width="50%">
-                                <p id="list">
-                                    • Sync artifacts between the source and destination sandboxes<br/>
-                                    • Revert artifacts (once) after syncing<br/>
-                                    • Log actions for documentation and troubleshooting
-                                </p>
-                            </Flex>
-                        </Flex>
+                        {/*<Flex direction="row">*/}
+                        {/*    <Flex direction="column" width="50%">*/}
+                        {/*        <p id="list">*/}
+                        {/*            • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and*/}
+                        {/*            first level dependencies<br/>*/}
+                        {/*            • Review dependencies before initiating copy<br/>*/}
+                        {/*        </p>*/}
+                        {/*    </Flex>*/}
+                        {/*    <Flex direction="column" width="50%">*/}
+                        {/*        <p id="list">*/}
+                        {/*            • Sync artifacts between the source and destination sandboxes<br/>*/}
+                        {/*            • Revert artifacts (once) after syncing<br/>*/}
+                        {/*            • Log actions for documentation and troubleshooting*/}
+                        {/*        </p>*/}
+                        {/*    </Flex>*/}
+                        {/*</Flex>*/}
                         <h5>Initial Design</h5><br/>
-                        <Flex direction="row">
-                            <Flex direction="column">
-                                <img id="half-width" key="sketch1" src="/project_images/AEPArtifactCopyApp/sketch1.jpg" alt="sketch"/><br/><br/><br/>
-                            </Flex>
-                            {/*<Flex direction="column">*/}
-                            {/*    <img id="half-width" key="sketch2" src="/project_images/AEPArtifactCopyApp/sketch2.jpg" alt="sketch"/><br/><br/><br/>*/}
-                            {/*</Flex>*/}
-                            <Flex direction="column">
-                                <img id="half-width" key="sketch3" src="/project_images/AEPArtifactCopyApp/sketch3.jpg" alt="sketch"/><br/><br/><br/>
-                            </Flex>
-                        </Flex>
+                        {/*<Flex direction="row">*/}
+                        {/*    <Flex direction="column">*/}
+                        {/*        <img id="half-width" key="sketch1" src="/project_images/AEPArtifactCopyApp/sketch1.jpg" alt="sketch"/><br/><br/><br/>*/}
+                        {/*    </Flex>*/}
+                        {/*    /!*<Flex direction="column">*!/*/}
+                        {/*    /!*    <img id="half-width" key="sketch2" src="/project_images/AEPArtifactCopyApp/sketch2.jpg" alt="sketch"/><br/><br/><br/>*!/*/}
+                        {/*    /!*</Flex>*!/*/}
+                        {/*    <Flex direction="column">*/}
+                        {/*        <img id="half-width" key="sketch3" src="/project_images/AEPArtifactCopyApp/sketch3.jpg" alt="sketch"/><br/><br/><br/>*/}
+                        {/*    </Flex>*/}
+                        {/*</Flex>*/}
                         <p>The first design consisted of two pages: the copy page and confirmation page.<br/>
                             On the copy page, the user can select the source and destination sandbox and artifacts to
                             display from the left panel. All artifacts are listed on the right.</p><br/>
@@ -72,14 +72,14 @@ class UXDesign extends Component {
                         <h5>Redesign</h5><br/>
                         <p>The primary focus of the redesign was to separate artifact types into their own copy workflows.<br/>
                             <br/>I followed existing design patterns found throughout Experience Platform.</p><br/>
-                        <Flex direction="row">
-                            <Flex direction="column">
-                                <img id="half-width" key="aep" src="/project_images/AEPArtifactCopyApp/sketch1.jpg" alt="aep"/><br/><br/><br/>
-                            </Flex>
-                            <Flex direction="column">
-                                <img id="half-width" key="figma" src="/project_images/AEPArtifactCopyApp/sketch3.jpg" alt="figma"/><br/><br/><br/>
-                            </Flex>
-                        </Flex>
+                        {/*<Flex direction="row">*/}
+                        {/*    <Flex direction="column">*/}
+                        {/*        <img id="half-width" key="aep" src="/project_images/AEPArtifactCopyApp/sketch1.jpg" alt="aep"/><br/><br/><br/>*/}
+                        {/*    </Flex>*/}
+                        {/*    <Flex direction="column">*/}
+                        {/*        <img id="half-width" key="figma" src="/project_images/AEPArtifactCopyApp/sketch3.jpg" alt="figma"/><br/><br/><br/>*/}
+                        {/*    </Flex>*/}
+                        {/*</Flex>*/}
                             <a href="https://www.figma.com/proto/TIHIYPfyhvmQiSWxfzz5i1/Untitled?node-id=1-400&scaling=
                             min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Link to redesign in Figma</a><br/><br/>
                             <p>Instead of copying all artifact types at once, the user can now select an artifact from the
