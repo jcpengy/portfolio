@@ -8,19 +8,18 @@ class UXDesign extends Component {
         return (
             <div>
                 <div className="content-container portfolio">
-                    <h4 key="AEP-Copy-App">Adobe Experience Platform Artifact Copy App</h4><br></br>
+                    <h4 key="AEP-Copy-App">Adobe Experience Platform<br/>Artifact Copy App</h4><br></br>
+                    <img id="full-width" key="overview" src="/project_images/AEPArtifactCopyApp/overview.png" alt="overview"/><br/><br/>
                     <div className="row">
                         <h4>The Story</h4><br/>
-                        <p>The team and I were challenged to think, design, and build an internal app to easily move
-                            Adobe Experience Platform (AEP) and Adobe Journey Optimizer (AJO) artifacts between sandboxes.<br/>
-                            Adobe Experience Platform allows customers to store, manage, and monitor configurations of
-                            data referred to as <b>artifacts</b> in sandboxes. Transferring complex artifacts can be
-                            time-consuming and error prone for multi-sandbox environments. Our primary objective was to
-                            create a simple UI to copy artifacts for faster sandbox set up and deployments between
-                            environments.<br/>
-                            <b>My role was Lead Front End Developer in a team of five.</b><br/>
+                        <p>Adobe Experience Platform allows customers to store, manage, and monitor configurations of
+                            data or <b>artifacts</b> in sandboxes. Transferring complex artifacts can be
+                            time-consuming and error prone for multi-sandbox environments. My team's primary objective was to
+                            design and build an app that enables users to easily copy Adobe Experience Platform (AEP)
+                            and Adobe Journey Optimizer (AJO) artifacts between sandboxes for seamless deployments.<br/><br/>
+                            <b>My role was Lead Front End Developer in a team of five.</b><br/><br/>
                             The app was developed using React Spectrum, App Builder (UI template), and SPA Pipeline
-                            for deployment to Unified Shell.<br/>
+                            for deployment to Unified Shell.<br/><br/>
                         </p><br/>
                         <h4>Design Process</h4><br/>
                         <p>We worked with solution architects and consultants to outline the list of requirements for the app below:</p><br/>

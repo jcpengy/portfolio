@@ -34,6 +34,12 @@ ul, li, p, h5 {
     margin-right: auto;
     align-items: center;
 }
+
+#full-width {
+    width: 50vw;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+}
 .config p {
     font-size: x-large;
 }
