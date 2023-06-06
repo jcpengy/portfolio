@@ -60,7 +60,9 @@ const Portfolio = () => {
                 {/*        <Link onPress={() => setSelectedGraphicDesign(true)}>Graphic Design</Link>*/}
                 {/*    </Flex>*/}
                 {/*</Flex>*/}
-
+                <div class="design-navbar">
+                    <h1 className="h1">ux design</h1><br></br>
+                </div>
                 {selectedGraphicDesign ? <GraphicDesign/> : <UXDesign/>}
                 <Footer></Footer>
             </div>
