@@ -83,7 +83,7 @@ const UXDesign = () => {
                     <div className="row">
                         <h5><br/>Background</h5><br/>
                         <p>Adobe Experience Platform allows customers to store, manage, and monitor configurations of
-                            data or <b>artifacts</b> in sandboxes. Transferring complex artifacts can be
+                            data or artifacts in sandboxes. Transferring complex artifacts can be
                             time-consuming and error prone for multi-sandbox environments. <u>My team's primary
                                 objective was to
                                 design and build an app that enables users to easily copy Adobe Experience Platform
@@ -97,7 +97,7 @@ const UXDesign = () => {
                         <h5>Requirements</h5><br/>
                         <img id="full-width" key="milestones" src="https://i.postimg.cc/G217XR3W/milestones.png"
                                  alt="milestones"/>
-                        <br/><br/><br/>
+                        <br/><br/><br/><br/>
                         <p>The app needed to accomplish the following:</p><br/><br/>
                         <p id="list">
                             • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
@@ -118,11 +118,11 @@ const UXDesign = () => {
                         <div class="row">
                             <div class="col-6">
                                 <img class="ux-design-img" key="sketch1" src="https://i.postimg.cc/RFRRGnDt/sketch1.jpg"
-                                     alt="sketch"/><br/><br/>
+                                     alt="sketch"/><br/>
                             </div>
                             <div class="col-6">
                                 <img class="ux-design-img" key="sketch3" src="https://i.postimg.cc/prcBMMxX/sketch3.jpg"
-                                     alt="sketch"/><br/><br/>
+                                     alt="sketch"/><br/>
                             </div>
                         </div>
                         <div class="row">
@@ -135,7 +135,7 @@ const UXDesign = () => {
                         </div>
                         <p><br/>Dependency tree<br/></p>
                         <div>
-                            <h5><br/>Setbacks</h5><p>After several internal demos and testing sessions, we concluded that our initial design lacked
+                            <h5><br/>Setbacks</h5><p>After presenting our app to internal teams, we concluded that our initial design lacked
                             scalability and helpful reporting. For large copy operations,
                             users could not review all dependencies at once. Troubleshooting from the audit log was also
                             difficult due to the volume of calls being made. Lastly, adding additional features like
@@ -201,17 +201,18 @@ const UXDesign = () => {
                         </div>
                         </div>
                         <h5><br/>Conclusion</h5>
-                           <p><u>Design Takeaways:</u><br/> In the process of re-designing the app, I learned the importance of
-                            involving the team throughout the design iteration process and communicating clearly with stakeholders
-                            to fine-tune requirements. Through modularizing the copy workflows, I also improved
-                            my organization skills in design and code. Lastly, by following layouts in AEP, particularly
-                            the dialog window before copy, I learned to
+                           <p><u>Design Takeaways:</u><br/>Throughout this project, I learned to involve
+                            the team more in the design iteration process and to communicate clearly with stakeholders
+                            to fine-tune requirements. By modularizing my code into reusable components,
+                               I was able to build a simpler and user-friendly UI that facilitates faster troubleshooting
+                               and reporting.
+                               Lastly, by following layouts in AEP to improve our copy workflow, I learned to
                             take inspiration from existing sources and build a proof of concept that could easily be
                             integrated into the Adobe ecosystem.<br/><br/>
                             From the audit log, we've tracked over 100 internal Adobe consultants and solution architects
                             using our app to copy, sync, and revert artifacts. By continuously improving the app based
                             on customer feedback and integrating new customer use cases, we've provided an application
-                            that simplifies and streamlines sandbox management in Adobe Experience Platform.
+                            that simplifies and streamlines sandbox management in AEP.
                             </p>
                         <br></br><br></br>
                     </div>
