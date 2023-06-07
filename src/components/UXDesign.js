@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import Contact from './Contact';
 
 import Footer from './Footer';
+import {Link} from "react-tiger-transition";
 // import {Flex} from "@adobe/react-spectrum";
 
 const UXDesign = () => {
@@ -12,8 +13,15 @@ const UXDesign = () => {
     }
 
         return (
-            <div>
-                <div className="content-container portfolio">
+            <div className="content-container portfolio">
+                <div className="dropdown">
+                    <button>Portfolio</button>
+                    <div className="dropdown-options">
+                        <Link to="/uxDesign"><div class="dropdown-option">ux design</div></Link>
+                        <Link to="/graphicDesign"><div class="dropdown-option">graphic design</div></Link>
+                    </div>
+                </div>
+                <div>
                     <h4 key="AEP-Copy-App">Adobe Experience Platform<br/>Artifact Copy App</h4><br></br>
                     <section className="carousel" aria-label="Gallery">
                         <ol className="carousel__viewport">
@@ -84,19 +92,20 @@ const UXDesign = () => {
                         <h5><br/>Background</h5><br/>
                         <p>Adobe Experience Platform allows customers to store, manage, and monitor configurations of
                             data or artifacts in sandboxes. Transferring complex artifacts can be
-                            time-consuming and error prone for multi-sandbox environments. <u>My team's primary
-                                objective was to
-                                design and build an app that enables users to easily copy Adobe Experience Platform
-                                (AEP)
-                                and Adobe Journey Optimizer (AJO) artifacts between sandboxes for seamless
-                                deployments.</u><br/><br/>
+                            time-consuming and error prone for multi-sandbox environments. <span
+                                class="highlight">The objective of this project
+                                was to design and build an app that allows users to easily copy Adobe Experience Platform
+                                (AEP) and Adobe Journey Optimizer (AJO) artifacts between sandboxes for seamless
+                                deployments.</span><br/><br/>
                             My role was Lead Front End Developer in a team of five.<br/><br/>
                             Technologies: React Spectrum, App Builder (UI template), and SPA Pipeline
                             for deployment to Unified Shell.<br/><br/>
                         </p><br/>
                         <h5>Requirements</h5><br/>
-                        <img id="full-width" key="milestones" src="https://i.postimg.cc/G217XR3W/milestones.png"
+                        <div class="row">
+                            <img id="full-width" key="milestones" src="https://i.postimg.cc/G217XR3W/milestones.png"
                                  alt="milestones"/>
+                        </div>
                         <br/><br/><br/><br/>
                         <p>The app needed to accomplish the following:</p><br/><br/>
                         <p id="list">
@@ -125,6 +134,7 @@ const UXDesign = () => {
                                      alt="sketch"/><br/>
                             </div>
                         </div>
+                        <p>Sketch of initial design<br/></p>
                         <div class="row">
                             <img id="full-width" key="initial" src="https://i.postimg.cc/zGgF6QQ8/initial-design.png"
                                  alt="initial"/><br/><br/>
@@ -133,7 +143,7 @@ const UXDesign = () => {
                             <img id="full-width" key="dep" src="https://i.postimg.cc/FKv3qHcV/dependency.png"
                                  alt="dep"/><br/><br/>
                         </div>
-                        <p><br/>Dependency tree<br/></p>
+                        <p>Dependency tree<br/></p>
                         <div>
                             <h5><br/>Setbacks</h5><p>After presenting our app to internal teams, we concluded that our initial design lacked
                             scalability and helpful reporting. For large copy operations,
@@ -173,7 +183,7 @@ const UXDesign = () => {
                             <img id="full-width" key="improv3" src="https://i.postimg.cc/B62sc5zW/Screen-Shot-2023-06-02-at-11-54-57-PM.png" alt="improv3"/><br/>
                             <br/><br/>
                         </div>
-                        <p>The biggest improvement to our app was separating the artifacts into their own tabs.
+                        <p><br/>The biggest improvement to our app was separating the artifacts into their own tabs.
                             This enabled us to easily integrate additional capabilities, such as syncing, reverting, and
                             copying artifacts across IMS organizations.
                         </p><br/>
@@ -214,11 +224,11 @@ const UXDesign = () => {
                             on customer feedback and integrating new customer use cases, we've provided an application
                             that simplifies and streamlines sandbox management in AEP.
                             </p>
-                        <br></br><br></br>
                     </div>
                     <br></br><br></br>
                     <p>• • • • • • •</p>
                 </div>
+                <Footer/>
             </div>
         )
 

@@ -2,27 +2,88 @@ import React, { Component } from 'react';
 import Contact from './Contact';
 
 import Footer from './Footer';
+import {Link} from "react-tiger-transition";
 
 class GraphicDesign extends Component {
     render() {
         return(
-            <div>
-                <div className="content-container portfolio">
-                    <h1 className="h1 about">graphic design</h1><br></br>
+            <div className="content-container portfolio">
+                <div className="dropdown">
+                    <button>Portfolio</button>
+                    <div className="dropdown-options">
+                        <Link to="/uxDesign">
+                            <div className="dropdown-option">ux design</div>
+                        </Link>
+                        <Link to="/graphicDesign">
+                            <div className="dropdown-option">graphic design</div>
+                        </Link>
+                    </div>
+                </div>
+                <div>
                     <div className="row">
-                        <h4>Hi! I'm Jess.</h4><p>I am currently a Tech Consultant at Adobe.
-                        I majored in Computer Science and Computer Graphics in the <span><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank" rel="noreferrer">Digital Media Design</a></span> program and minored
-                        in Fine Arts at the University of Pennsylvania, where I graduated from the School of Engineering in May 2019. As a student, I was involved in the Society of Women Engineers, <i>The Daily Pennsylvanian</i>, Weiss Tech House, and Alpha Phi communities and interned at <i>The New York Times</i> and Molex.<br></br><br></br>
-                        In my free time, I like drawing pet portraits, cartooning on @peng.and.ink, catching up on episodes of <i>The Bachelor</i>, and running. <br></br><br></br></p>
-
-                        {/* <img id='cartoon' src={cartoon} alt="cartoon"/> */}
+                        <div class="col-6">
+                            <img class="graphic-design-img"
+                                 src="https://i.postimg.cc/jSPBtPPR/Screen-Shot-2023-06-06-at-9-25-07-PM.png"
+                                 alt=""/>
+                        </div>
+                        <div class="col-6">
+                            <img class="graphic-design-img"
+                                 src="https://i.postimg.cc/B6qrhb84/Screen-Shot-2023-06-06-at-9-25-27-PM.png"
+                                 alt=""/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/Bn9wYbyk/Screen-Shot-2023-06-06-at-9-28-53-PM.png"
+                                 alt=""/>
+                        </div>
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/d1LbMX9x/Screen-Shot-2023-06-06-at-9-29-54-PM.png"
+                                 alt=""/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/pLckNd1P/Screen-Shot-2023-06-06-at-9-31-32-PM.png"
+                                 alt=""/>
+                        </div>
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/d3QTt2Lp/Screen-Shot-2023-06-06-at-9-32-16-PM.png"
+                                 alt=""/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/wMPT8LJh/Screen-Shot-2023-06-06-at-9-34-14-PM.png"
+                                 alt=""/>
+                        </div>
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/kX6gNY3w/Screen-Shot-2023-06-06-at-9-35-00-PM.png"
+                                 alt=""/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/L8j4wqs1/Screen-Shot-2023-06-06-at-9-35-34-PM.png"
+                                 alt=""/>
+                        </div>
+                        <div className="col-6">
+                            <img className="graphic-design-img"
+                                 src="https://i.postimg.cc/G2gbGGXZ/Screen-Shot-2023-06-06-at-9-36-21-PM.png"
+                                 alt=""/>
+                        </div>
                     </div>
                     <br></br><br></br>
                     <p>• • • • • • •</p>
-                    <br></br><br></br>
-                    <Contact></Contact>
-                    <Footer></Footer>
                 </div>
+                <Footer/>
             </div>
         )
     }

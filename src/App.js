@@ -13,6 +13,7 @@
 
   import Back from './assets/previous.svg';
   import GraphicDesign from "./components/GraphicDesign";
+  import UXDesign from "./components/UXDesign";
 
   // inject glide styles
   glide({
@@ -51,14 +52,14 @@
               </div>
               <div className="row home-btns">
                 <Link to="/about" transition='glide-right'className="home-btn">About</Link>
-                <Link to="/projects" transition='glide-left' className="home-btn">Portfolio</Link>
+                <Link to="/uxDesign" transition='glide-left' className="home-btn">Portfolio</Link>
               </div>
             </div>
           </Screen>
         </Route>
         <Route
           exact
-          path="/projects"
+          path="/uxDesign"
           screen // shorthand to wrap children with screen
           screenProps={{
             style: {
@@ -66,7 +67,7 @@
             }
           }}
         >
-          <Portfolio></Portfolio>
+          <UXDesign></UXDesign>
           <div className="nav portfolio">
             <Link to="/" transition='glide-right'><img className="nav-btn back-portfolio" src={Back} alt=""/></Link>
           </div>
@@ -85,7 +86,21 @@
           <div className="nav about">
             <Link to="/" transition='glide-left'><img className="nav-btn back-about" src={Back} alt=""/></Link>
           </div>
-          
+        </Route>
+        <Route
+            exact
+            path="/graphicDesign"
+            screen
+            screenProps={{
+              style: {
+                ...screenStyle
+              }
+            }}
+        >
+          <GraphicDesign></GraphicDesign>
+          <div className="nav portfolio">
+            <Link to="/" transition='glide-right'><img className="nav-btn back-portfolio" src={Back} alt=""/></Link>
+          </div>
         </Route>
       </Navigation>
     </Router>

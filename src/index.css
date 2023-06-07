@@ -574,11 +574,62 @@ h1 span span {
     }
 }
 
-.design-navbar {
-    z-index: 20;
-    margin: -50px;
-    position: fixed;
-    background-color: #FFFAFF;
+.highlight {
+    display: inline-block;
+    padding: .25em 0;
+    background: #ffff66;
+}
+
+.dropdown {
+    /*display: inline-block;*/
+    /*position: relative;*/
+    margin-left: 25vw;
+    margin-top: -2vh;
+    margin-bottom: 5vh;
+    z-index: 100;
+}
+
+button{
+    border:none;
+    border-radius:5px;
+    padding:15px 30px;
+    font-size:2em;
+    cursor:pointer;
+    font-family: gorditaRegular;
+    color: #4A6ED9;
+}
+
+button:hover, button:active{
+    background-color:#ddd;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.graphic-design-img {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+}
+
+.dropdown-option {
+    display: block;
+    cursor: pointer;
+    font-family: gorditaRegular;
+    color: #4A6ED9;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 20px 40px;
 }
 
 @keyframes move-buttons {
@@ -692,6 +743,7 @@ h3 {
 .content-container.about, .content-container.portfolio {
     padding: 5% 15% 5% 15%;
 }
+
 .footer {
     font-family: gorditaRegular;
     color: #4A6ED9;
@@ -728,7 +780,7 @@ h3 {
 }
 .nav.portfolio {
     justify-content: flex-start;
-    left: 5vh;
+    left: 1vh;
 }
 .nav.home {
     right: 5vh;
@@ -795,10 +847,17 @@ a {
 a:hover {
     color: #ff4cec;
 }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     p, label {
         font-size: 2em;
+    }
+    .dropdown {
+        margin-top: -9vh;
+        margin-left: 35vw;
+        margin-bottom: 5vh;
+        z-index: 100;
     }
     .content-container.about, .content-container.portfolio {
         padding: 20% 5% 20% 5%;
@@ -839,7 +898,7 @@ a:hover {
         margin: 0 0.5vh 0 0.5vh;
     }
     .nav-btn.back-portfolio {
-        margin: 3vh 1vh 0 -3vh;
+        margin: 3vh 1vh 0 -1vh;
         width: 100px;
         height: 100px;
     }
